@@ -1,0 +1,69 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+body, html {
+  height: 100%;
+}
+
+body {
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+
+.login-form {
+  min-height: 10rem;
+  margin: auto;
+  max-width: 50%;
+  padding: .5rem;
+}
+
+
+
+
+.login-username, .login-password {
+  background: transparent;
+  border: 0 solid;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  display: block;
+  margin: 1rem;
+  padding: .5rem;
+  transition: 250ms background ease-in;
+  width: calc(100% - 50px);
+}
+.login-username:focus, .login-password:focus {
+  background: white;
+  color: black;
+  transition: 250ms background ease-in;
+}
+
+
+.login-submit {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  min-width: 12px;
+  padding: .25rem;
+  transition: 250ms background ease-in;
+}
+.login-submit:hover, .login-submit:focus {
+  background: white;
+  color: black;
+  transition: 250ms background ease-in;
+}
+
+
+
+
+
+
