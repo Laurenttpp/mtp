@@ -1,10 +1,9 @@
-body {
+.mbody {
     margin:0;
-    background-image: url("http://bpc.h-cdn.co/assets/17/10/480x480/gallery-1488829863-square-1447695880-sony-alpha-a7r-ii.jpg");
-    background-repeat: no-repeat;
-    background-position: 370px 130px;
-    background-size: 300px;
+    background-image: url("image.jpg");
 }
+
+
 
 .myNavBar {
     list-style-type: none;
@@ -12,23 +11,19 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #000000;
-    position: absolute;
-    top: 0;
-    width: 100%;
 }
 
 
 
 .libar {
     float: left;
-    border-right: 1px solid #bbb;
 }
 
 .libar .abar {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
@@ -38,14 +33,13 @@ body {
 }
 
 .libar:first-child {
-    border-left:1px solid #bbb;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   padding: 1rem;
   background-color: #000000;
   text-align: center;
@@ -104,12 +98,12 @@ body {
 .ulnav {
     background-color: transparent;
     list-style-type: none;
-    padding-top: 20%;
+    padding-top: 11%;
 }
 
 .linav .anav {
     display: block;
-    color: #000000;
+    color: #ffc700;
     font-size: 20px;
     padding: 8px 16px;
     text-decoration: none;
@@ -118,6 +112,36 @@ body {
 /* Change the link color on hover */
 .linav .anav:hover {
     background-color:transparent;
-    color: #820000;
+    color: #ffc700;
     font-weight: bold;
+}
+
+.pbasket {
+  position: absolute;
+  left:100px;
+  top:200px;
+  font-size: 30px;
+  color:white;
+}
+
+.linav .anavc {
+    display: block;
+    color: #ffc700;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Change the link color on hover */
+.linav .anavc:hover {
+    background-color:transparent;
+    color: #ffc700;
+    font-weight: bold;
+}
+
+.thumbnail{
+    background-color: transparent;
+    
 }
