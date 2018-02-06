@@ -1,0 +1,155 @@
+.mbody {
+    margin:0;
+    padding: 0;
+    background-image: url("image.jpg");
+}
+
+ .cbody{
+    margin:0;
+    background-color:#cc636c;
+}
+
+
+.myNavBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+
+.libar {
+    float: left;
+}
+
+.libar .abar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.libar .abar:hover {
+    background-color: #820000;
+    color: white;
+}
+
+.libar:first-child {
+}
+
+#footer {
+  position:static;
+ /* right: 0;
+  left: 0;
+  bottom: 0; 
+  padding: 1rem; */
+  background-color: #000000;
+  text-align: center;
+}
+
+
+.active {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #820000;
+    color: white;
+}
+
+.active:hover{
+    background-color: #820000;
+    color: white;
+}
+
+.ul1 {
+    float:left;
+    width: 50%;
+}
+
+.ul2 {
+    float:right;
+    width: 50%;
+}
+
+.ul1mainp{
+    color: #ffc700;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ul2mainp{
+    color: #ffc700;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ul2ps{
+    color: #ffffff;
+    text-align: center;
+}
+
+.ul1ps{
+    color: #ffffff;
+    text-align: center;
+}
+
+.ulnav {
+    background-color: transparent;
+    list-style-type: none;
+    padding-top: 30%;
+}
+
+.linav .anav {
+    display: block;
+    color: #ffc700;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.linav .anav:hover {
+    background-color:transparent;
+    color: #ffc700;
+    font-weight: bold;
+}
+
+.pbasket {
+  position: absolute;
+  left:100px;
+  top:200px;
+  font-size: 30px;
+  color:white;
+}
+
+.linav .anavc {
+    display: block;
+    color: #ffc700;
+    font-size: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Change the link color on hover */
+.linav .anavc:hover {
+    background-color:transparent;
+    color: #ffc700;
+    font-weight: bold;
+}
+
+.thumbnail {
+    background-color:transparent !important;
+    padding-top: 10px !important;
+}
+
+.thumbdiv {
+    padding-top: 20px !important;
+}
