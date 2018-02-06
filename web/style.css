@@ -18,11 +18,29 @@ body {
 }
 
 
+.grandParentContaniner{
+    display:table; height:100%; margin: 0 auto;
+  }
+
+  .parentContainer{
+    display:table-cell; vertical-align:middle;
+  }
+
+
 .login-form {
   min-height: 10rem;
   margin: auto;
   max-width: 50%;
   padding: .5rem;
+
+  background: #ffc700;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 257px;
+  margin: 20px auto 0;
+  width: 700px;
+    text-align: center;
+   vertical-align: middle;
 }
 
 
@@ -32,7 +50,7 @@ body {
   background: transparent;
   border: 0 solid;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
+  color: black;
   display: block;
   margin: 1rem;
   padding: .5rem;
