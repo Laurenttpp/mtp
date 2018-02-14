@@ -39,16 +39,34 @@
 .libar:first-child {
 }
 
-#footer {
-  position:fixed;
-  right: 0;
-  left: 0;
-  bottom: 0; 
-  padding: 1rem;
-  background-color: #000000;
-  text-align: center;
+#about{
+    margin-top: 38px;
+    border-color: #cc636c;
+    background-color: #910000;
+    margin-right:14px;
+    margin-left:14px;
 }
 
+#ptitle{
+    color:black;
+}
+
+#pbody{
+    background-color: black;
+    color: white;
+}
+
+#footer {
+  position:static;
+  background-color: #000000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#ctypes{
+    margin-right:1px;
+    margin-left:1px;
+}
 
 .active {
     display: block;
@@ -65,22 +83,6 @@
     color: white;
 }
 
-.ul1 {
-    float:left;
-    width: 50%;
-}
-
-.ul2 {
-    float:right;
-    width: 50%;
-}
-
-.ul1mainp{
-    color: #ffc700;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
 
 .ul2mainp{
     color: #ffc700;
@@ -102,7 +104,7 @@
 .ulnav {
     background-color: transparent;
     list-style-type: none;
-    padding-top: 8%;
+    padding-top: 30%;
 }
 
 .linav .anav {
@@ -111,6 +113,7 @@
     font-size: 20px;
     padding: 8px 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Change the link color on hover */
@@ -118,6 +121,7 @@
     background-color:transparent;
     color: #ffc700;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .pbasket {
@@ -143,4 +147,13 @@
     background-color:transparent;
     color: #ffc700;
     font-weight: bold;
+}
+
+.thumbnail {
+    background-color:transparent !important;
+    padding-top: 10px !important;
+}
+
+.thumbdiv {
+    padding-top: 20px !important;
 }
