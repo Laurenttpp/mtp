@@ -9,6 +9,11 @@
     background-color:#cc636c;
 }
 
+#myhead{
+    margin-right:1px;
+    margin-left:0.5px;
+}
+
 
 .myNavBar {
     list-style-type: none;
