@@ -1,9 +1,3 @@
-.mbody {
-    margin:0;
-    padding: 0;
-    background-image: url("image.jpg");
-}
-
  .cbody{
     margin:0;
     background-color:#cc636c;
@@ -159,8 +153,4 @@
 
 .thumbdiv {
     padding-top: 20px !important;
-}
-
-#cone{
-    margin-bottom: 30px !important;
 }
