@@ -8,7 +8,7 @@ session_start();
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
 $dbname = "dbname=mrafe084";
-$credentials = "user=mrafe084 password=Jonath2002";
+$credentials = "user=mrafe084 password=------";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
