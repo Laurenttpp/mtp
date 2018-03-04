@@ -4,42 +4,52 @@ body, html {
 
 body {
   font-weight: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
 }
 
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     color: white;
-    opacity: 1; /* Firefox */
+    opacity: 0.7; 
+    font-style: italic;
 }
 
 
 .grandParentContaniner{
-    display:table; height:100%; margin: 0 auto;
+   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
   }
 
-  .parentContainer{
-    display:table-cell; vertical-align:middle;
-  }
 
 
-.login-form {
-  min-height: 10rem;
-  margin: auto;
-  max-width: 50%;
+
+.signup-form {
+
+
   padding: .5rem;
 
   background: #ffc700;
   border: 1px solid #42464b;
   border-radius: 6px;
-  height: 257px;
-  margin: 20px auto 0;
-  width: 700px;
-    text-align: center;
-   vertical-align: middle;
+  height: 280px;
+  width: 370px;
+  text-align: center;
+
+}
+
+.login-form {
+
+
+  padding: .5rem;
+
+  background: #ffc700;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 230px;
+  width: 370px;
+  text-align: center;
+
 }
 
 
@@ -78,4 +88,37 @@ body {
   color: black;
   transition: 250ms background ease-in;
 }
+
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:0.9;
+}
+
+
+
+.save {
+  width: 100%;
+}
+
+.sign {
+    padding: 14px 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.sign, .log {
+  float: left;
+  width: 50%;
+}
+
 

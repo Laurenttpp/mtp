@@ -11,46 +11,11 @@
     <style>
      
     
-    button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity:1;
-}
 
 
 
-/* Float cancel and signup buttons and add an equal width */
-.log {
-  width: 100%;
-}
 
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
 
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 180px) {
-    ..log {
-       width: 100%;
-    }
-}
     </style>
   
 </head>
@@ -92,13 +57,13 @@ connectDB ($host, $port, $dbname, $credentials);
 <div class="grandParentContaniner">
 <div class="parentContainer">
 
-  <form class="login-form" action="addAccount.php" method="post">
+  <form class="signup-form" action="addAccount.php" method="post">
    <input type="username" name="usernameA" class="login-username" autofocus="true" required="true" placeholder="name" />
   <input type="email"  name="mailA" class="login-username" autofocus="true" required="true" placeholder="Email" />
   <input type="password" name="mdpA" class="login-password" required="true" placeholder="Password" />
 
   <div class="clearfix">
-      <button type="submit" class="log" >Sign up</button>
+      <button type="submit" class="save" >Sign up</button>
     </div>
   
   
