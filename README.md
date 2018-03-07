@@ -14,3 +14,6 @@ _Ouvrir le fichier redirectHome.php sur un éditeur de texte et modifier les iden
 _Si les identifiants sont bons le message "Opened database successfully" devrait apparaitre quand vous aller sur la page connection.php
 _Copier le dossier web dans le dossier htdocs situé dans Xampp de la manière suivante C:\xampp\htdocs\web .
 _Il suffit enfin de lancer le fichier HTML home ou n'importe quels autres fichiers sur le navigateur avec le lien suivant en exemple si on ouvre Home.html: http://localhost/web/Home.html
+
+
+Un compte par défaut avec les identifiants mail= "jo@mail" et mot de passe="jo" a déjà été implémenter et peut être utiliser pour se connecter.

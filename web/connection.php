@@ -52,6 +52,57 @@ function connectDB($host, $port, $dbname, $credentials) {
 connectDB ($host, $port, $dbname, $credentials);
 
 
+////////////Compte par defaut
+
+function newAccount($db, $nameA, $mailA, $mdpA) {
+	$sql = <<<EOF
+		INSERT INTO DataBase.account
+		VALUES ('$nameA', '$mailA', '$mdpA');
+
+
+EOF;
+
+
+	
+	
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+
+$firsrM= "jo@mail";
+$firstP="jo";
+
+
+
+$sql = <<<EOF
+    		SELECT * FROM DataBase.account WHERE mailaccount ='$firsrM' AND mdpaccount ='$firstP' ;
+
+EOF;
+
+$ret = pg_query ( $db, $sql );
+
+$row = pg_fetch_row($ret);
+
+if($row[0]==null){
+	newAccount($db,"jo",  "jo@mail","jo");
+	;
+}
+
+/////////////
+
+
+
+
+pg_close ($db);
+
+
+
 
 
 ?>
