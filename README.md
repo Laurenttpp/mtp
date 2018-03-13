@@ -9,6 +9,8 @@ Et nous utilisons enfin pgAdmin pour la base de données.
 
 Instructions de déploiement :
 
+
+_Sur pgAdmin lancer le fichier DataBase situé dans le repertoire GIT afin de créer la base de donnée .
 _Ouvrir le fichier connection.php sur un éditeur de texte et modifier les identifiants aux lignes 78 et 79 par ses propres identifiants uozone (dbname et user correspondent au nom utilisateur et password correspond au mot de passe).
 _Ouvrir le fichier redirectHome.php sur un éditeur de texte et modifier les identifiants aux lignes 10 et 11 par ses propres identifiants uozone (dbname et user correspondent au nom utilisateur et password correspond au mot de passe ).
 _Si les identifiants sont bons le message "Opened database successfully" devrait apparaitre quand vous aller sur la page connection.php
