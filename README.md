@@ -3,8 +3,8 @@ Description du projet :
 Technologies utilises:  
 
 HTML , CSS, JavaScript, PHP, et MySql ainsi que Bootstrab.
-Nous utilisons également Xampp pour avoir accée à Apache et MySQL.
-Et nous utilisons enfin pgAdmin pour la base de données.
+Nous utilisons également Xampp v3.2.2 pour avoir accée à Apache et MySQL.
+Et nous utilisons enfin pgAdmin 3 pour la base de données.
 
 
 Instructions de déploiement :
