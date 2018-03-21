@@ -1,3 +1,7 @@
+<?php
+  include 'savesettings.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,10 +44,24 @@
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv" id="tryyy">
   				<div class="thumbnail">
       				<img src="pro/canon1dc.png">
-      				<div class="caption">
-        				<h3>Canon 1D C</h3>
-                <p>Likes <span id="onebl" class="badge">0</span>  Dislikes <span id="onebd" class="badge">0</span></p>
-        				<p>
+      				<div class="caption" id="canon1dc">
+                <?php
+
+                $sql = <<<EOF
+    		SELECT * FROM DataBase.count WHERE id = 'pfourcl';
+
+EOF;
+
+			$ret = pg_query ( $db, $sql );
+			$row = pg_fetch_row($ret);
+
+
+			echo("<h3>");
+			echo("Canon 1 DC");
+			echo("</h3>");
+			// echo $row[1];
+
+                ?>
                   <a id="onecl" class="btn btn-default" role="button">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
@@ -54,9 +72,9 @@
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/sonya99ii.png">
-      				<div class="caption">
+      				<div class="caption" id="sonya99ii">
         				<h3>Sony Alpha 99ii</h3>
-                <p>Likes <span id="twobl" class="badge">0</span>  Dislikes <span id="twobd" class="badge">0</span></p>
+                <p>Likes <span id="twobl" class="badge"></span>  Dislikes <span id="twobd" class="badge"></span></p>
         				<p>
                   <a id="twocl" class="btn btn-default" role="button">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button">Dislike</a>
@@ -68,12 +86,12 @@
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/nikond4.png">
-      				<div class="caption">
+      				<div class="caption" id="nikond4">
         				<h3>Nikon D4</h3>
-                <p>Likes <span id="threebl" class="badge">0</span>  Dislikes <span id="threebd" class="badge">0</span></p>
+                <p>Likes <span id="pthreebl" class="badge"></span>  Dislikes <span id="pthreebd" class="badge"></span></p>
         				<p>
-                  <a id="threecl" class="btn btn-default" role="button">Like</a>
-                  <a id="threecd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="pthreecl" class="btn btn-default" role="button">Like</a>
+                  <a id="pthreecd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>
@@ -85,12 +103,12 @@
 			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/nikond5.png">
-      				<div class="caption">
+      				<div class="caption" id="nikond5">
         				<h3>Nikon D5</h3>
-                <p>Likes <span id="fourbl" class="badge">0</span>  Dislikes <span id="fourbd" class="badge">0</span></p>
+                <p>Likes <span id="pfourbl" class="badge"></span>  Dislikes <span id="pfourbd" class="badge"></span></p>
         				<p>
-                  <a id="fourcl" class="btn btn-default" role="button">Like</a> 
-                  <a id="fourcd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="pfourcl" class="btn btn-default" role="button">Like</a> 
+                  <a id="pfourcd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>
@@ -99,12 +117,12 @@
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/canon1dx.png">
-      				<div class="caption">
+      				<div class="caption" id="canon1dx">
         				<h3>Canon 1D X</h3>
-                <p>Likes <span id="fivebl" class="badge">0</span>  Dislikes <span id="fivebd" class="badge">0</span></p>
+                <p>Likes <span id="pfivebl" class="badge"></span>  Dislikes <span id="pfivebd" class="badge"></span></p>
         				<p>
-                  <a id="fivecl" class="btn btn-default" role="button">Like</a> 
-                  <a id="fivecd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="pfivecl" class="btn btn-default" role="button">Like</a> 
+                  <a id="pfivecd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>
@@ -113,12 +131,12 @@
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/lumixgh5.png">
-      				<div class="caption">
+      				<div class="caption" id="lumixgh5">
         				<h3>Lumix GH5</h3>
-                <p>Likes <span id="sixbl" class="badge">0</span>  Dislikes <span id="sixbd" class="badge">0</span></p>
+                <p>Likes <span id="psixbl" class="badge"></span>  Dislikes <span id="psixbd" class="badge"></span></p>
         				<p>
-                  <a id="sixcl" class="btn btn-default" role="button">Like</a>
-                  <a id="sixcd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="psixcl" class="btn btn-default" role="button">Like</a>
+                  <a id="psixcd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>
@@ -127,12 +145,12 @@
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
       				<img src="pro/olympusem1.png">
-      				<div class="caption">
+      				<div class="caption" id="olympusem1">
         				<h3>Olympus EM-1</h3>
-                <p>Likes <span id="sevenbl" class="badge">0</span>  Dislikes <span id="sevenbd" class="badge">0</span></p>
+                <p>Likes <span id="psevenbl" class="badge"></span>  Dislikes <span id="psevenbd" class="badge"></span></p>
         				<p>
-                  <a id="sevencl" class="btn btn-default" role="button">Like</a> 
-                  <a id="sevencd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="psevencl" class="btn btn-default" role="button">Like</a> 
+                  <a id="psevencd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>

@@ -3,7 +3,7 @@
 CREATE SCHEMA DataBase;
 
  DROP TABLE IF EXISTS DataBase.account;
-
+ DROP TABLE IF EXISTS DataBase.count;
 
 
 
@@ -15,10 +15,9 @@ CREATE TABLE IF NOT EXISTS DataBase.account (
 		loged		boolean				,
 	PRIMARY KEY (mailAccount));
 
-CREATE TABLE IF NOT EXISTS DataBase.camera (
-		idproduct	VARCHAR(9)		NOT NULL,
-		likes		int 				,
-		dislikes	int				,
-		rented		boolean				,
-	PRIMARY KEY (idproduct));
+CREATE TABLE IF NOT EXISTS DataBase.count (
+		id		VARCHAR(10)		NOT NULL,
+		count		int 				,
+	PRIMARY KEY (id));
 
+INSERT INTO DataBase.count VALUES ('pfourcl', 0);
