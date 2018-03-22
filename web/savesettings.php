@@ -28,7 +28,7 @@ connectDB ($host, $port, $dbname, $credentials);
 
 		function firstlike($db, $likes) {
 				$sql = <<<EOF
-		UPDATE DataBase.account SET likes = '$likes' WHERE id = 'canon1dc';
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'canon1dc';
 		
 		
 EOF;
@@ -54,9 +54,12 @@ EOF;
 
 
 
+
 			if($_POST['action'] == 'call_this') {
 
-				firstlike($db,$_POST['4']);
+				$a = $a + 1;
+
+				firstlike($db,$a);
 		}
 
 ?>
