@@ -33,7 +33,7 @@
 		<div class="row" id="middle">
   			<div class="col-12 col-sm-6 col-lg-3">
   				<ul class="ulnav">
-  					<li class="linav"><a class="anavc" href="pro.html">Professional</a></li>
+  					<li class="linav"><a class="anavc" href="pro.php">Professional</a></li>
   					<li class="linav"><a class="anav" href="semi.html">Semi-Professional</a></li>
   					<li class="linav"><a class="anav" href="ama.html">Amateur</a></li>
 				</ul>
@@ -48,7 +48,7 @@
                 <?php
 
                 $sql = <<<EOF
-    		SELECT * FROM DataBase.count WHERE id = 'pfourcl';
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canon1dc';
 
 EOF;
 
@@ -59,10 +59,22 @@ EOF;
 			echo("<h3>");
 			echo("Canon 1 DC");
 			echo("</h3>");
-			// echo $row[1];
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
 
                 ?>
-                  <a id="onecl" class="btn btn-default" role="button">Like</a> 
+                <p>
+                  <a id="onecl" class="btn btn-default" role="button" onclick="myAjax()">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
@@ -73,8 +85,35 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/sonya99ii.png">
       				<div class="caption" id="sonya99ii">
-        				<h3>Sony Alpha 99ii</h3>
-                <p>Likes <span id="twobl" class="badge"></span>  Dislikes <span id="twobd" class="badge"></span></p>
+
+                  <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'sonya99ii';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Sony Alpha 99ii");
+      echo("</h3>");
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>              
         				<p>
                   <a id="twocl" class="btn btn-default" role="button">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button">Dislike</a>
@@ -87,8 +126,34 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/nikond4.png">
       				<div class="caption" id="nikond4">
-        				<h3>Nikon D4</h3>
-                <p>Likes <span id="pthreebl" class="badge"></span>  Dislikes <span id="pthreebd" class="badge"></span></p>
+                <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'nikond4';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Nikon D4");
+      echo("</h3>");
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>
         				<p>
                   <a id="pthreecl" class="btn btn-default" role="button">Like</a>
                   <a id="pthreecd" class="btn btn-danger" role="button">Dislike</a>
@@ -104,8 +169,36 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/nikond5.png">
       				<div class="caption" id="nikond5">
-        				<h3>Nikon D5</h3>
-                <p>Likes <span id="pfourbl" class="badge"></span>  Dislikes <span id="pfourbd" class="badge"></span></p>
+
+                <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'nikond5';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Nikon D5");
+      echo("</h3>");
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>
+
         				<p>
                   <a id="pfourcl" class="btn btn-default" role="button">Like</a> 
                   <a id="pfourcd" class="btn btn-danger" role="button">Dislike</a>
@@ -118,8 +211,36 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/canon1dx.png">
       				<div class="caption" id="canon1dx">
-        				<h3>Canon 1D X</h3>
-                <p>Likes <span id="pfivebl" class="badge"></span>  Dislikes <span id="pfivebd" class="badge"></span></p>
+
+                <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'canon1dx';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Canon 1D X");
+      echo("</h3>");
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>
+
         				<p>
                   <a id="pfivecl" class="btn btn-default" role="button">Like</a> 
                   <a id="pfivecd" class="btn btn-danger" role="button">Dislike</a>
@@ -132,8 +253,35 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/lumixgh5.png">
       				<div class="caption" id="lumixgh5">
-        				<h3>Lumix GH5</h3>
-                <p>Likes <span id="psixbl" class="badge"></span>  Dislikes <span id="psixbd" class="badge"></span></p>
+
+                <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'lumixgh5';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Lumix GH5");
+      echo("</h3>");
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>
+
         				<p>
                   <a id="psixcl" class="btn btn-default" role="button">Like</a>
                   <a id="psixcd" class="btn btn-danger" role="button">Dislike</a>
@@ -146,8 +294,36 @@ EOF;
   				<div class="thumbnail">
       				<img src="pro/olympusem1.png">
       				<div class="caption" id="olympusem1">
-        				<h3>Olympus EM-1</h3>
-                <p>Likes <span id="psevenbl" class="badge"></span>  Dislikes <span id="psevenbd" class="badge"></span></p>
+
+                <?php
+
+                $sql = <<<EOF
+        SELECT * FROM DataBase.camera WHERE idcamera = 'olympusem1';
+
+EOF;
+
+      $ret = pg_query ( $db, $sql );
+      $row = pg_fetch_row($ret);
+
+
+      echo("<h3>");
+      echo("Olympus EM-1");
+      echo("</h3>");
+
+      echo("<p>");
+      echo("Likes ");
+      echo("<span class = 'badge'>");
+      echo $row[1];
+      echo("</span>");
+      echo("  Dislikes ");
+      echo("<span class = 'badge'>");
+      echo $row[2];
+      echo("</span>");
+      echo("</p>");
+
+
+                ?>
+
         				<p>
                   <a id="psevencl" class="btn btn-default" role="button">Like</a> 
                   <a id="psevencd" class="btn btn-danger" role="button">Dislike</a>

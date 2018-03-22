@@ -26,5 +26,37 @@ function connectDB($host, $port, $dbname, $credentials) {
 
 connectDB ($host, $port, $dbname, $credentials);
 
+		function firstlike($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.account SET likes = '$likes' WHERE id = 'canon1dc';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sql = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canon1dc';
+
+EOF;
+
+			$ret = pg_query ( $db, $sql );
+			$row = pg_fetch_row($ret);
+
+			$a = $row[1];
+
+
+
+			if($_POST['action'] == 'call_this') {
+
+				firstlike($db,$_POST['4']);
+		}
 
 ?>
