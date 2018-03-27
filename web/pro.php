@@ -74,8 +74,8 @@ EOF;
 
                 ?>
                 <p>
-                  <a id="onecl" class="btn btn-default" role="button" onclick="myAjax()">Like</a> 
-                  <a id="onecd" class="btn btn-danger" role="button">Dislike</a>
+                  <a id="onecl" class="btn btn-default" role="button" onclick="myAjax(); location.href=location.href; " >Like</a> 
+                  <a id="onecd" class="btn btn-danger" role="button" >Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>

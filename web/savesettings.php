@@ -55,11 +55,14 @@ EOF;
 
 
 
-			if($_POST['action'] == 'call_this') {
+			if(isset($_POST['action'])) {
 
-				$a = $a + 1;
+				if($_POST['action'] == 'call_this') {
+					$a = $a + 1;
 
-				firstlike($db,$a);
+					firstlike($db,$a);
+					header("Refresh:0; url=pro.php");
+				}
 		}
 
 ?>

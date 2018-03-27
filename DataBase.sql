@@ -14,13 +14,19 @@ CREATE TABLE IF NOT EXISTS DataBase.account (
 		mailAccount	VARCHAR(50) 		NOT NULL,
 		mdpAccount	VARCHAR(10)		NOT NULL,
 		loged		boolean				,
+		canon1dc	int 				,
+		sonya99ii	int 				,
+		nikond4		int 				,
+		nikond5		int 				,
+		canon1dx	int 				,
+		lumixgh5	int 				,
+		olympusem1	int 				,
 	PRIMARY KEY (mailAccount));
 
 CREATE TABLE IF NOT EXISTS DataBase.camera (
 		idcamera	VARCHAR(10)	NOT NULL,
 		likes		int 				,
 		dislike		int 				,
-		reviewed	int 				,
 		rented		int 				,
 	PRIMARY KEY (idcamera));
 
