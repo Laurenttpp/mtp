@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="logstyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    <style>
+     
     
+
+
+
+
+
+    </style>
   
 </head>
 
@@ -66,37 +74,42 @@ connectDB ($host, $port, $dbname, $credentials);
 
 
   
+
+
   <?php
   
-  //echo ("good");
-
-function newAccount($db, $nameA, $mailA, $mdpA) {
-	$sql = <<<EOF
+  
+  function newAccount($db, $nameA, $mailA, $mdpA, $stateA) {
+  	$sql = <<<EOF
 		INSERT INTO DataBase.account
-		VALUES ('$nameA', '$mailA', '$mdpA');
-		
-		
+		VALUES ('$nameA', '$mailA', '$mdpA', '$stateA');
+  
+  
 EOF;
+  
+  	$ret = pg_query ( $db, $sql );
+  	if (! $ret) {
+  		echo "Insertion error " + pg_last_error ( $db );
+  	} else {
+  		echo "Records created successfully\n";
+  	}
+  }
+  
+  
+  
+  if (isset( $_POST['usernameA']) && isset( $_POST['mailA'])  && isset( $_POST['mdpA']) ){
+  
+  	newAccount($db,$_POST['usernameA'],  $_POST['mailA'], $_POST['mdpA'],'false');
+  }
+  
+  
+  
+  pg_close ($db);
+  ?>
+    
 
-	$ret = pg_query ( $db, $sql );
-	if (! $ret) {
-		echo "Insertion error " + pg_last_error ( $db );
-	} else {
-		echo "Records created successfully\n";
-	}
-}
 
 
-
-if (isset( $_POST['usernameA']) && isset( $_POST['mailA'])  && isset( $_POST['mdpA']) ){
-	
-	newAccount($db,$_POST['usernameA'],  $_POST['mailA'], $_POST['mdpA']);
-}
-
-
-
-pg_close ($db);
-?>
 
 
 

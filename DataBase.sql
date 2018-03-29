@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS DataBase.account (
 		nameAccount	VARCHAR(10)		NOT NULL,
 		mailAccount	VARCHAR(50) 		NOT NULL,
 		mdpAccount	VARCHAR(10)		NOT NULL,
+		logState	BOOLEAN			NOT NULL,
 		loged		boolean				,
 		canon1dc	int 				,
 		sonya99ii	int 				,

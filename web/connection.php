@@ -28,8 +28,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=lnize065";
-$credentials = "user=lnize065 password=Laurent1";
+$dbname = "dbname=------";
+$credentials = "user=------ password=------";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -51,26 +51,31 @@ function connectDB($host, $port, $dbname, $credentials) {
 
 connectDB ($host, $port, $dbname, $credentials);
 
+////creer DB
+
+
+
+
 
 ////////////Compte par defaut
 
-function newAccount($db, $nameA, $mailA, $mdpA) {
-	$sql = <<<EOF
-		INSERT INTO DataBase.account
-		VALUES ('$nameA', '$mailA', '$mdpA');
+function newAccount($db, $nameA, $mailA, $mdpA, $stateA) {
+  $sql = <<<EOF
+    INSERT INTO DataBase.account
+    VALUES ('$nameA', '$mailA', '$mdpA','$stateA');
 
 
 EOF;
 
 
-	
-	
-	$ret = pg_query ( $db, $sql );
-	if (! $ret) {
-		echo "Insertion error " + pg_last_error ( $db );
-	} else {
-		echo "Records created successfully\n";
-	}
+  
+  
+  $ret = pg_query ( $db, $sql );
+  if (! $ret) {
+    echo "Insertion error " + pg_last_error ( $db );
+  } else {
+    echo "Records created successfully\n";
+  }
 }
 
 
@@ -81,7 +86,7 @@ $firstP="jo";
 
 
 $sql = <<<EOF
-    		SELECT * FROM DataBase.account WHERE mailaccount ='$firsrM' AND mdpaccount ='$firstP' ;
+        SELECT * FROM DataBase.account WHERE mailaccount ='$firsrM' AND mdpaccount ='$firstP' ;
 
 EOF;
 
@@ -90,16 +95,17 @@ $ret = pg_query ( $db, $sql );
 $row = pg_fetch_row($ret);
 
 if($row[0]==null){
-	newAccount($db,"jo",  "jo@mail","jo");
-	;
+  newAccount($db,"jo",  "jo@mail","jo",'false');
+  ;
 }
 
 /////////////
 
 
 
-
 pg_close ($db);
+
+
 
 
 
@@ -170,5 +176,6 @@ $(document).ready(function(){
   return false;
   });
   });
+
 
 </script>

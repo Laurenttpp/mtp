@@ -7,8 +7,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=lnize065";
-$credentials = "user=lnize065 password=Laurent1";
+$dbname = "dbname=------";
+$credentials = "user=------ password=------";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -26,20 +26,19 @@ function connectDB($host, $port, $dbname, $credentials) {
 
 connectDB ($host, $port, $dbname, $credentials);
 
-
-
+$_SESSION['mail'] = $_POST['name'];
+$logmail= $_POST['name'];
+$logmdp=$_POST['pwd'];
 
 
 
 
 if( isset($_POST['name']) && isset($_POST['pwd'])   ){
-	
-	
-	$logmail= $_POST['name'];
-	$logmdp=$_POST['pwd'];;
-	
 
-	
+
+
+
+
 	$sql = <<<EOF
     		SELECT * FROM DataBase.account WHERE mailaccount ='$logmail' AND mdpaccount ='$logmdp' ;
 
@@ -55,13 +54,27 @@ EOF;
 
 	if($row[0]!=null){
 		echo "Success";
-		}
-		else{ // Sinon
-			echo "Failed"; 
-		}
+		
+		
+		
+		$sql2 = <<<EOF
+				UPDATE DataBase.account
+				SET logstate = true
+				WHERE mailaccount='$logmail';		
+EOF;
+		
+		$ret2 = pg_query ( $db, $sql2 );
+		
+		
+	}
+	else{ // Sinon
+		echo "Failed";
+	}
 
 }
 
-else {echo "empty informations  ".$_POST['name'];}
+//else {echo "empty informations  ".$_POST['name'];}
+
+
 
 ?>
