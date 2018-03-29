@@ -29,50 +29,50 @@
 		<div class="row" id="middle">
   			<div class="col-12 col-sm-6 col-lg-3">
   				<ul class="ulnav">
-  					<li class="linav"><a class="anav" href="pro.html">Professional</a></li>
-  					<li class="linav"><a class="anavc" href="semi.html">Semi-Professional</a></li>
-  					<li class="linav"><a class="anav" href="ama.html">Amateur</a></li>
+  					<li class="linav"><a class="anav" href="pro.php">Professional</a></li>
+  					<li class="linav"><a class="anav" href="semi.php">Semi-Professional</a></li>
+  					<li class="linav"><a class="anavc" href="ama.php">Amateur</a></li>
 				</ul>
   	</div>
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/canon5dmarkiii.png">
+      				<img src="ama/canon7d.png">
       				<div class="caption">
-        				<h3>Canon 5D MarkIII</h3>
-                <p>Likes <span id="onebl" class="badge">0</span>  Dislikes <span id="onebd" class="badge">0</span></p>
+        				<h3>Canon 7D</h3>
+        				<p>Likes <span id="onebl" class="badge">0</span>  Dislikes <span id="onebd" class="badge">0</span></p>
         				<p>
-                  <a id="onecl" class="btn btn-default" role="button">Like</a> 
+        					<a id="onecl" class="btn btn-default" role="button">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-              </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   	</div>
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/lumixgx8.png">
+      				<img src="ama/canon60d.png">
       				<div class="caption">
-        				<h3>Lumix GX8</h3>
-                <p>Likes <span id="twobl" class="badge">0</span>  Dislikes <span id="twobd" class="badge">0</span></p>
+        				<h3>Canon 60D</h3>
+        				<p>Likes <span id="twobl" class="badge">0</span>  Dislikes <span id="twobd" class="badge">0</span></p>
         				<p>
-                  <a id="twocl" class="btn btn-default" role="button">Like</a> 
+        					<a id="twocl" class="btn btn-default" role="button">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     	    </div>
   	</div>
   	<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/canond750.png">
+      				<img src="ama/canon100d.png">
       				<div class="caption">
-        				<h3>Canon D750</h3>
-                <p>Likes <span id="threebl" class="badge">0</span>  Dislikes <span id="threebd" class="badge">0</span></p>
+        				<h3>Canon 100D</h3>
+        				<p>Likes <span id="threebl" class="badge">0</span>  Dislikes <span id="threebd" class="badge">0</span></p>
         				<p>
-                  <a id="threecl" class="btn btn-default" role="button">Like</a>
+        					<a id="threecl" class="btn btn-default" role="button">Like</a>
                   <a id="threecd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   	</div>
@@ -81,57 +81,57 @@
 		<div class="row">
 			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/nikond850.png">
+      				<img src="ama/canon1300d.png">
       				<div class="caption">
-        				<h3>Nikon D850</h3>
-                <p>Likes <span id="fourbl" class="badge">0</span>  Dislikes <span id="fourbd" class="badge">0</span></p>
+        				<h3>Canon 1300D</h3>
+        				<p>Likes <span id="fourbl" class="badge">0</span>  Dislikes <span id="fourbd" class="badge">0</span></p>
         				<p>
-                  <a id="fourcl" class="btn btn-default" role="button">Like</a> 
+        					<a id="fourcl" class="btn btn-default" role="button">Like</a> 
                   <a id="fourcd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   			</div>
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/nikondf.png">
+      				<img src="ama/nikond500.png">
       				<div class="caption">
-        				<h3>Nikon DF</h3>
-                <p>Likes <span id="fivebl" class="badge">0</span>  Dislikes <span id="fivebd" class="badge">0</span></p>
+        				<h3>Nikon D500</h3>
+        				<p>Likes <span id="fivebl" class="badge">0</span>  Dislikes <span id="fivebd" class="badge">0</span></p>
         				<p>
-                  <a id="fivecl" class="btn btn-default" role="button">Like</a> 
+        					<a id="fivecl" class="btn btn-default" role="button">Like</a> 
                   <a id="fivecd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   			</div>
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/sonyalpha68.png">
+      				<img src="ama/nikond600.png">
       				<div class="caption">
-        				<h3>Sony Alpha 68</h3>
-                <p>Likes <span id="sixbl" class="badge">0</span>  Dislikes <span id="sixbd" class="badge">0</span></p>
+        				<h3>Nikon D600</h3>
+        				<p>Likes <span id="sixbl" class="badge">0</span>  Dislikes <span id="sixbd" class="badge">0</span></p>
         				<p>
-                  <a id="sixcl" class="btn btn-default" role="button">Like</a>
+        					<a id="sixcl" class="btn btn-default" role="button">Like</a>
                   <a id="sixcd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   			</div>
   			  			<div class="col-12 col-sm-6 col-lg-3 thumbdiv">
   				<div class="thumbnail">
-      				<img src="spro/sonyalpha77.png">
+      				<img src="ama/nikond7500.png">
       				<div class="caption">
-        				<h3>Sony Alpha 77</h3>
+        				<h3>Nikon D7500</h3>
         				<p>Likes <span id="sevenbl" class="badge">0</span>  Dislikes <span id="sevenbd" class="badge">0</span></p>
         				<p>
-                  <a id="sevencl" class="btn btn-default" role="button">Like</a> 
+        					<a id="sevencl" class="btn btn-default" role="button">Like</a> 
                   <a id="sevencd" class="btn btn-danger" role="button">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
-                </p>
+        					<a class="btn btn-warning" role="button">Rent</a>
+        				</p>
       				</div>
     			</div>
   			</div>
@@ -155,10 +155,10 @@
 			</div>
 		</div>
 
-  <script src="semi.js"></script>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="ama.js"></script>
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <!-- Latest compiled and minified JavaScript -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

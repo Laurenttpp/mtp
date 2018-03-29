@@ -1,12 +1,9 @@
-function myAjax() {
-      $.ajax({
-           type: "POST",
-           url: 'savesettings.php',
-           data:{action:'call_this'},
-           if (data.success == true) {
-           	     setTimeout(function(){// wait for 5 secs(2)
-           location.reload(); // then reload the page.(3)
-      }, 5000); 
-           }
-      });
- }
+var oneLikeBadge = document.getElementById("onebl");
+var oneDislikeBadge = document.getElementById("onebd");
+var oneLikeButton = document.getElementById("onecl");
+var oneDislikeButton = document.getElementById("onecd");
+
+oneLikeButton.onclick = function() {
+  oneLikeCount += 1;
+  oneLikeBadge.innerHTML = oneLikeCount.toString();
+};

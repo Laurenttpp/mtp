@@ -34,8 +34,8 @@
   			<div class="col-12 col-sm-6 col-lg-3">
   				<ul class="ulnav">
   					<li class="linav"><a class="anavc" href="pro.php">Professional</a></li>
-  					<li class="linav"><a class="anav" href="semi.html">Semi-Professional</a></li>
-  					<li class="linav"><a class="anav" href="ama.html">Amateur</a></li>
+  					<li class="linav"><a class="anav" href="semi.php">Semi-Professional</a></li>
+  					<li class="linav"><a class="anav" href="ama.php">Amateur</a></li>
 				</ul>
   	</div>
 
@@ -74,8 +74,8 @@ EOF;
 
                 ?>
                 <p>
-                  <a id="onecl" class="btn btn-default" role="button" onclick="myAjax(); location.href=location.href; " >Like</a> 
-                  <a id="onecd" class="btn btn-danger" role="button" >Dislike</a>
+                  <a id="onecl" class="btn btn-default" role="button">Like</a> 
+                  <a id="onecd" class="btn btn-danger" role="button">Dislike</a>
                   <a class="btn btn-warning" role="button">Rent</a>
                 </p>
       				</div>
