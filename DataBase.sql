@@ -47,26 +47,26 @@ CREATE TABLE IF NOT EXISTS DataBase.camera (
 		
 	PRIMARY KEY (idcamera));
 
-INSERT INTO DataBase.camera VALUES ('canon1dc', 0, 0, 0,2000);
-INSERT INTO DataBase.camera VALUES ('sonya99ii', 0, 0, 0, 2500);
-INSERT INTO DataBase.camera VALUES ('nikond4', 0, 0, 0, 3000 );
-INSERT INTO DataBase.camera VALUES ('nikond5', 0, 0, 0,1700);
-INSERT INTO DataBase.camera VALUES ('canon1dx', 0, 0, 0,2300);
-INSERT INTO DataBase.camera VALUES ('lumixgh5', 0, 0, 0,1200);
-INSERT INTO DataBase.camera VALUES ('olympusem1', 0, 0, 0,3300);
+INSERT INTO DataBase.camera VALUES ('canon1dc', 0, 0, 0,200);
+INSERT INTO DataBase.camera VALUES ('sonya99ii', 0, 0, 0, 250);
+INSERT INTO DataBase.camera VALUES ('nikond4', 0, 0, 0, 300);
+INSERT INTO DataBase.camera VALUES ('nikond5', 0, 0, 0,170);
+INSERT INTO DataBase.camera VALUES ('canon1dx', 0, 0, 0,230);
+INSERT INTO DataBase.camera VALUES ('lumixgh5', 0, 0, 0,120);
+INSERT INTO DataBase.camera VALUES ('olympusem1', 0, 0, 0,330);
 
-INSERT INTO DataBase.camera VALUES ('canon5dmarkiii', 0, 0, 0,900);
-INSERT INTO DataBase.camera VALUES ('lumixgx8', 0, 0, 0,550);
-INSERT INTO DataBase.camera VALUES ('canond750', 0, 0, 0,600);
-INSERT INTO DataBase.camera VALUES ('nikond850', 0, 0, 0,775);
-INSERT INTO DataBase.camera VALUES ('nikondf', 0, 0, 0,700);
-INSERT INTO DataBase.camera VALUES ('sonyalpha68', 0, 0, 0,550);
-INSERT INTO DataBase.camera VALUES ('sonyalpha77', 0, 0, 0,650);
+INSERT INTO DataBase.camera VALUES ('canon5dmarkiii', 0, 0, 0,90);
+INSERT INTO DataBase.camera VALUES ('lumixgx8', 0, 0, 0,55);
+INSERT INTO DataBase.camera VALUES ('canond750', 0, 0, 0,60);
+INSERT INTO DataBase.camera VALUES ('nikond850', 0, 0, 0,77);
+INSERT INTO DataBase.camera VALUES ('nikondf', 0, 0, 0,70);
+INSERT INTO DataBase.camera VALUES ('sonyalpha68', 0, 0, 0,55);
+INSERT INTO DataBase.camera VALUES ('sonyalpha77', 0, 0, 0,65);
 
-INSERT INTO DataBase.camera VALUES ('canond7d', 0, 0, 0,170);
-INSERT INTO DataBase.camera VALUES ('canon60d', 0, 0, 0,270);
-INSERT INTO DataBase.camera VALUES ('canon100d', 0, 0, 0,350);
-INSERT INTO DataBase.camera VALUES ('canon1300d', 0, 0, 0,400);
-INSERT INTO DataBase.camera VALUES ('nikond500', 0, 0, 0,250);
-INSERT INTO DataBase.camera VALUES ('nikond600', 0, 0, 0,300);
-INSERT INTO DataBase.camera VALUES ('nikond7500', 0, 0, 0,150);
+INSERT INTO DataBase.camera VALUES ('canond7d', 0, 0, 0,17);
+INSERT INTO DataBase.camera VALUES ('canon60d', 0, 0, 0,27);
+INSERT INTO DataBase.camera VALUES ('canon100d', 0, 0, 0,35);
+INSERT INTO DataBase.camera VALUES ('canon1300d', 0, 0, 0,40);
+INSERT INTO DataBase.camera VALUES ('nikond500', 0, 0, 0,25);
+INSERT INTO DataBase.camera VALUES ('nikond600', 0, 0, 0,30);
+INSERT INTO DataBase.camera VALUES ('nikond7500', 0, 0, 0,15);

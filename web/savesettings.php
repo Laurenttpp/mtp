@@ -7,8 +7,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=----";
-$credentials = "user=---- password=----";
+$dbname = "dbname=lnize065";
+$credentials = "user=lnize065 password=Laurent1";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -533,5 +533,518 @@ EOF;
 					prodislikeseven($db,$ar);
 				}
 		}
+
+//SEMILIKEONE
+		function semilikeone($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'canon5dmarkiii';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlt = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canon5dmarkiii';
+
+EOF;
+
+			$rett = pg_query ( $db, $sqlt );
+			$rowt = pg_fetch_row($rett);
+			$at = $rowt[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikeone') {
+					$at = $at + 1;
+
+					semilikeone($db,$at);
+				}
+		}
+
+//SEMIDISLIKESONE
+		function semidislikeone($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'canon5dmarkiii';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqly = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canon5dmarkiii';
+
+EOF;
+
+			$rety = pg_query ( $db, $sqly );
+			$rowy = pg_fetch_row($rety);
+			$ay = $rowy[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikeone') {
+					$ay = $ay + 1;
+
+					semidislikeone($db,$ay);
+				}
+		}
+
+
+
+//SEMILIKETWO
+		function semiliketwo($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'lumixgx8';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlu = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'lumixgx8';
+
+EOF;
+
+			$retu = pg_query ( $db, $sqlu );
+			$rowu = pg_fetch_row($retu);
+			$au = $rowu[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semiliketwo') {
+					$au = $au + 1;
+
+					semiliketwo($db,$au);
+				}
+		}
+
+//SEMIDISLIKESTWO
+		function semidisliketwo($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'lumixgx8';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqli = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'lumixgx8';
+
+EOF;
+
+			$reti = pg_query ( $db, $sqli );
+			$rowi = pg_fetch_row($reti);
+			$ai = $rowi[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidisliketwo') {
+					$ai = $ai + 1;
+
+					semidisliketwo($db,$ai);
+				}
+		}
+
+
+
+
+//SEMILIKETHREE
+		function semilikethree($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'canond750';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlo = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canond750';
+
+EOF;
+
+			$reto = pg_query ( $db, $sqlo );
+			$rowo = pg_fetch_row($reto);
+			$ao = $rowo[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikethree') {
+					$ao = $ao + 1;
+
+					semilikethree($db,$ao);
+				}
+		}
+
+//SEMIDISLIKESTHREE
+		function semidislikethree($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'canond750';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlp = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canond750';
+
+EOF;
+
+			$retp = pg_query ( $db, $sqlp );
+			$rowp = pg_fetch_row($retp);
+			$ap = $rowp[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikethree') {
+					$ap = $ap + 1;
+
+					semidislikethree($db,$ap);
+				}
+		}
+
+//SEMILIKEFOUR
+		function semilikefour($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'nikond850';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqla = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'nikond850';
+
+EOF;
+
+			$reta = pg_query ( $db, $sqla );
+			$rowa = pg_fetch_row($reta);
+			$aa = $rowa[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikefour') {
+					$aa = $aa + 1;
+
+					semilikefour($db,$aa);
+				}
+		}
+
+//SEMIDISLIKESFOUR
+		function semidislikefour($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'nikond850';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqls = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'nikond850';
+
+EOF;
+
+			$rets = pg_query ( $db, $sqls );
+			$rows = pg_fetch_row($rets);
+			$as = $rows[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikefour') {
+					$as = $as + 1;
+
+					semidislikefour($db,$as);
+				}
+		}
+
+//SEMILIKEFIVE
+		function semilikefive($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'nikondf';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqld = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'nikondf';
+
+EOF;
+
+			$retd = pg_query ( $db, $sqld );
+			$rowd = pg_fetch_row($retd);
+			$ad = $rowd[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikefive') {
+					$ad = $ad + 1;
+
+					semilikefive($db,$ad);
+				}
+		}
+
+//SEMIDISLIKESFIVE
+		function semidislikefive($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'nikondf';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlf = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'nikondf';
+
+EOF;
+
+			$retf = pg_query ( $db, $sqlf );
+			$rowf = pg_fetch_row($retf);
+			$af = $rowf[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikefive') {
+					$af = $af + 1;
+
+					semidislikefive($db,$af);
+				}
+		}
+
+
+
+//SEMILIKESIX
+		function semilikesix($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'sonyalpha68';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlg = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'sonyalpha68';
+
+EOF;
+
+			$retg = pg_query ( $db, $sqlg );
+			$rowg = pg_fetch_row($retg);
+			$ag = $rowg[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikesix') {
+					$ag = $ag + 1;
+
+					semilikesix($db,$ag);
+				}
+		}
+
+//SEMIDISLIKESIX
+		function semidislikesix($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'sonyalpha68';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlh = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'sonyalpha68';
+
+EOF;
+
+			$reth = pg_query ( $db, $sqlh );
+			$rowh = pg_fetch_row($reth);
+			$ah = $rowh[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikesix') {
+					$ah = $ah + 1;
+
+					semidislikesix($db,$ah);
+				}
+		}
+
+
+//SEMILIKESEVEN
+		function semilikeseven($db, $likes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET likes = '$likes' WHERE idcamera = 'sonyalpha77';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlj = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'sonyalpha77';
+
+EOF;
+
+			$retj = pg_query ( $db, $sqlj );
+			$rowj = pg_fetch_row($retj);
+			$aj = $rowj[1];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semilikeseven') {
+					$aj = $aj + 1;
+
+					semilikeseven($db,$aj);
+				}
+		}
+
+//SEMIDISLIKESEVEN
+		function semidislikeseven($db, $dislikes) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET dislike = '$dislikes' WHERE idcamera = 'sonyalpha77';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqlk = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'sonyalpha77';
+
+EOF;
+
+			$retk = pg_query ( $db, $sqlk );
+			$rowk = pg_fetch_row($retk);
+			$ak = $rowk[2];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'semidislikeseven') {
+					$ak = $ak + 1;
+
+					semidislikeseven($db,$ak);
+				}
+		}
+
 
 ?>
