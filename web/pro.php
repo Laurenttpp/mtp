@@ -77,6 +77,9 @@ EOF;
                   <a id="onecl" class="btn btn-default" role="button" onclick="prolikeone(); location.href=location.href;">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button" onclick="prodislikeone(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentone()">Rent</a>
+                  <span class="popup" onclick="myFunction()">Info!
+                    <span class="popuptext" id="myPopup">4K 4096x2160 8-Bit 4:2:2 Cinematic Video. Canon Log with 12 Stops of Dynamic Range. Continuous Recording, No 29:59 Min Limit. Full HD 1080p Recording at up to 60fps</span>
+                  </span>
                 </p>
               </div>
           </div>
