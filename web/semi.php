@@ -73,7 +73,7 @@ EOF;
         				<p>
                   <a id="onecl" class="btn btn-default" role="button" onclick="semilikeone(); location.href=location.href;">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button" onclick="semidislikeone(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentone()">Rent</a>
                 </p>
       				</div>
     			</div>
@@ -113,7 +113,7 @@ EOF;
         				<p>
                   <a id="twocl" class="btn btn-default" role="button" onclick="semiliketwo(); location.href=location.href;">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button" onclick="semidisliketwo(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirenttwo()">Rent</a>
                 </p>
       				</div>
     	    </div>
@@ -153,7 +153,7 @@ EOF;
         				<p>
                   <a id="threecl" class="btn btn-default" role="button" onclick="semilikethree(); location.href=location.href;">Like</a>
                   <a id="threecd" class="btn btn-danger" role="button" onclick="semidislikethree(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentthree()">Rent</a>
                 </p>
       				</div>
     			</div>
@@ -196,7 +196,7 @@ EOF;
         				<p>
                   <a id="fourcl" class="btn btn-default" role="button" onclick="semilikefour(); location.href=location.href;">Like</a> 
                   <a id="fourcd" class="btn btn-danger" role="button" onclick="semidislikefour(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentfour()">Rent</a>
                 </p>
       				</div>
     			</div>
@@ -236,7 +236,7 @@ EOF;
         				<p>
                   <a id="fivecl" class="btn btn-default" role="button" onclick="semilikefive(); location.href=location.href;">Like</a> 
                   <a id="fivecd" class="btn btn-danger" role="button" onclick="semidislikefive(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentfive()">Rent</a>
                 </p>
       				</div>
     			</div>
@@ -276,7 +276,7 @@ EOF;
         				<p>
                   <a id="sixcl" class="btn btn-default" role="button" onclick="semilikesix(); location.href=location.href;">Like</a>
                   <a id="sixcd" class="btn btn-danger" role="button" onclick="semidislikesix(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentsix()">Rent</a>
                 </p>
       				</div>
     			</div>
@@ -316,7 +316,7 @@ EOF;
         				<p>
                   <a id="sevencl" class="btn btn-default" role="button" onclick="semilikeseven(); location.href=location.href;">Like</a> 
                   <a id="sevencd" class="btn btn-danger" role="button" onclick="semidislikeseven(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="semirentseven()">Rent</a>
                 </p>
       				</div>
     			</div>

@@ -116,3 +116,58 @@ function semilikeseven() {
            data:{action:'semidislikeseven'},
       });
  }
+
+
+
+
+
+
+  function semirentone() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentone'},
+      });
+ }
+   function semirenttwo() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirenttwo'},
+      });
+ }
+function semirentthree() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentthree'},
+      });
+ }
+function semirentfour() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentfour'},
+      });
+ }
+function semirentfive() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentfive'},
+      });
+ }
+function semirentsix() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentsix'},
+      });
+ }
+function semirentseven() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'semirentseven'},
+      });
+ }

@@ -114,3 +114,61 @@ function amalikeseven() {
            data:{action:'amadislikeseven'},
       });
  }
+
+
+
+
+
+
+
+
+
+  function amarentone() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentone'},
+      });
+ }
+   function amarenttwo() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarenttwo'},
+      });
+ }
+function amarentthree() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentthree'},
+      });
+ }
+function amarentfour() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentfour'},
+      });
+ }
+function amarentfive() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentfive'},
+      });
+ }
+function amarentsix() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentsix'},
+      });
+ }
+function amarentseven() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'amarentseven'},
+      });
+ }
