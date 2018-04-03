@@ -1660,4 +1660,148 @@ EOF;
 				}
 		}
 
+//PRORENTFOUR
+		function prorentfour($db, $rent) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond5';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqln7 = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'nikond5';
+
+EOF;
+
+			$retn7 = pg_query ( $db, $sqln7 );
+			$rown7 = pg_fetch_row($retn7);
+			$an7 = $rown7[3];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'prorentfour' && $an7 == 0) {
+					$an7 = 1;
+
+					prorentfour($db,$an7);
+				}
+		}
+
+//PRORENTFIVE
+		function prorentfive($db, $rent) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon1dx';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqln8 = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'canon1dx';
+
+EOF;
+
+			$retn8 = pg_query ( $db, $sqln8 );
+			$rown8 = pg_fetch_row($retn8);
+			$an8 = $rown8[3];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'prorentfive' && $an8 == 0) {
+					$an8 = 1;
+
+					prorentfive($db,$an8);
+				}
+		}
+
+//PRORENTSIX
+		function prorentsix($db, $rent) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'lumixgh5';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqln9 = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'lumixgh5';
+
+EOF;
+
+			$retn9 = pg_query ( $db, $sqln9 );
+			$rown9 = pg_fetch_row($retn9);
+			$an9 = $rown9[3];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'prorentsix' && $an9 == 0) {
+					$an9 = 1;
+
+					prorentsix($db,$an9);
+				}
+		}
+
+//PRORENTSEVEN
+		function prorentseven($db, $rent) {
+				$sql = <<<EOF
+		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'olympusem1';
+		
+		
+EOF;
+
+	$ret = pg_query ( $db, $sql );
+	if (! $ret) {
+		echo "Insertion error " + pg_last_error ( $db );
+	} else {
+		echo "Records created successfully\n";
+	}
+}
+
+
+                $sqln0 = <<<EOF
+    		SELECT * FROM DataBase.camera WHERE idcamera = 'olympusem1';
+
+EOF;
+
+			$retn0 = pg_query ( $db, $sqln0 );
+			$rown0 = pg_fetch_row($retn0);
+			$an0 = $rown0[3];
+
+
+			if(isset($_POST['action'])) {
+
+				if($_POST['action'] == 'prorentseven' && $an0 == 0) {
+					$an0 = 1;
+
+					prorentseven($db,$an0);
+				}
+		}
+
 ?>
