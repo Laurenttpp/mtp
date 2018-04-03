@@ -77,8 +77,8 @@ EOF;
                   <a id="onecl" class="btn btn-default" role="button" onclick="prolikeone(); location.href=location.href;">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button" onclick="prodislikeone(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentone()">Rent</a>
-                  <span class="popup" onclick="myFunction()">Info!
-                    <span class="popuptext" id="myPopup">4K 4096x2160 8-Bit 4:2:2 Cinematic Video. Canon Log with 12 Stops of Dynamic Range. Continuous Recording, No 29:59 Min Limit. Full HD 1080p Recording at up to 60fps</span>
+                  <span id="popupq" class="popup" onclick="myFunctionq()">Info!
+                    <span class="popuptext" id="myPopupq">4K 4096x2160 8-Bit 4:2:2 Cinematic Video. Canon Log with 12 Stops of Dynamic Range. Continuous Recording, No 29:59 Min Limit. Full HD 1080p Recording at up to 60fps</span>
                   </span>
                 </p>
               </div>
@@ -121,6 +121,9 @@ EOF;
                   <a id="twocl" class="btn btn-default" role="button" onclick="proliketwo(); location.href=location.href;">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button" onclick="prodisliketwo(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorenttwo()">Rent</a>
+                  <span id="popupw" class="popup" onclick="myFunctionw()">Info!
+                    <span class="popuptext" id="myPopupw">42MP Full-Frame Exmor R BSI CMOS Sensor. BIONZ X Image Processor and Front-End LSI. 0.5" 2.36M-Dot XGA OLED Tru-Finder EVF. Internal UHD 4K Video And S-Log3 Gamma</span>
+                  </span>
                 </p>
               </div>
           </div>
@@ -161,6 +164,9 @@ EOF;
                   <a id="pthreecl" class="btn btn-default" role="button" onclick="prolikethree(); location.href=location.href;">Like</a>
                   <a id="pthreecd" class="btn btn-danger" role="button" onclick="prodislikethree(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentthree()">Rent</a>
+                  <span id="popupe" class="popup" onclick="myFunctione()">Info!
+                    <span class="popuptext" id="myPopupe">10/11 frames per second continuous shooting in FX-format for up to 150 frames. Nikon FX- format (35.9 x 24.0mm) CMOS Sensor with 16.2 effective megapixels.</span>
+                  </span>
                 </p>
               </div>
           </div>
@@ -206,6 +212,9 @@ EOF;
                   <a id="pfourcl" class="btn btn-default" role="button" onclick="prolikefour(); location.href=location.href;">Like</a> 
                   <a id="pfourcd" class="btn btn-danger" role="button" onclick="prodislikefour(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentfour()">Rent</a>
+                  <span id="popupr" class="popup" onclick="myFunctionr()">Info!
+                    <span class="popuptext" id="myPopupr">20.8MP FX-Format CMOS Sensor. EXPEED 5 Image Processor. 3.2" 2.36m-Dot Touchscreen LCD Monitor. 4K UHD Video Recording at 30 fps.</span>
+                  </span>
                 </p>
               </div>
           </div>
@@ -248,6 +257,9 @@ EOF;
                   <a id="pfivecl" class="btn btn-default" role="button" onclick="prolikefive(); location.href=location.href;">Like</a> 
                   <a id="pfivecd" class="btn btn-danger" role="button" onclick="prodislikefive(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentfive()">Rent</a>
+                  <span id="popupt" class="popup" onclick="myFunctiont()">Info!
+                    <span class="popuptext" id="myPopupt">20.2MP Full-Frame CMOS Sensor. Dual DIGIC 6+ Image Processors. 3.2" 1.62m-Dot Touchscreen LCD Monitor. DCI 4K Video at 60 fps, 8.8MP Still Grab.</span>
+                  </span>
                 </p>
               </div>
           </div>
@@ -289,6 +301,9 @@ EOF;
                   <a id="psixcl" class="btn btn-default" role="button" onclick="prolikesix(); location.href=location.href;">Like</a>
                   <a id="psixcd" class="btn btn-danger" role="button" onclick="prodislikesix(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentsix()">Rent</a>
+                  <span id="popupy" class="popup" onclick="myFunctiony()">Info!
+                    <span class="popuptext" id="myPopupy">20.3MP Digital Live MOS Sensor. Venus Engine Image Processor. 4K Video with No Crop. Internal 4:2:2 10-Bit 4K Video at 24/30p.</span>
+                  </span>
                 </p>
               </div>
           </div>
@@ -331,6 +346,9 @@ EOF;
                   <a id="psevencl" class="btn btn-default" role="button" onclick="prolikeseven(); location.href=location.href;">Like</a> 
                   <a id="psevencd" class="btn btn-danger" role="button" onclick="prodislikeseven(); location.href=location.href;">Dislike</a>
                   <a class="btn btn-warning" role="button" onclick="prorentseven()">Rent</a>
+                  <span id="popupu" class="popup" onclick="myFunctionu()">Info!
+                    <span class="popuptext" id="myPopupu">20.4MP Live MOS Sensor. TruePic VIII Dual Quad Core Processor. Micro Four Thirds System. Internal 2.36m-Dot LCD Electronic Viewfinder.</span>
+                  </span>
                 </p>
               </div>
           </div>

@@ -171,3 +171,39 @@ function semirentseven() {
            data:{action:'semirentseven'},
       });
  }
+
+
+function myFunctioni() {
+    var popupi = document.getElementById("myPopupi");
+    popupi.classList.toggle("showi");
+}
+
+function myFunctiono() {
+    var popupo = document.getElementById("myPopupo");
+    popupo.classList.toggle("showo");
+}
+
+function myFunctionp() {
+    var popupp = document.getElementById("myPopupp");
+    popupp.classList.toggle("showp");
+}
+
+function myFunctiona() {
+    var popupa = document.getElementById("myPopupa");
+    popupa.classList.toggle("showa");
+}
+
+function myFunctions() {
+    var popups = document.getElementById("myPopups");
+    popups.classList.toggle("shows");
+}
+
+function myFunctiond() {
+    var popupd = document.getElementById("myPopupd");
+    popupd.classList.toggle("showd");
+}
+
+function myFunctionf() {
+    var popupf = document.getElementById("myPopupf");
+    popupf.classList.toggle("showf");
+}

@@ -74,6 +74,9 @@ EOF;
         					<a id="onecl" class="btn btn-default" role="button" onclick="amalikeone(); location.href=location.href;">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button" onclick="amadislikeone(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarentone()">Rent</a>
+                  <span id="popupg" class="popup" onclick="myFunctiong()">Info!
+                    <span class="popuptext" id="myPopupg">20.2MP APS-C CMOS Sensor. Dual DIGIC 6 Image Processors. 3.0" 1.04m-Dot Clear View II LCD Monitor. Full HD 1080p/60 Video And Movie Servo AF</span>
+                  </span>
         				</p>
       				</div>
     			</div>
@@ -114,6 +117,9 @@ EOF;
         					<a id="twocl" class="btn btn-default" role="button" onclick="amaliketwo(); location.href=location.href;">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button" onclick="amadisliketwo(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarenttwo()">Rent</a>
+                  <span id="popuph" class="popup" onclick="myFunctionh()">Info!
+                    <span class="popuptext" id="myPopuph">24.2MP APS-C CMOS Sensor. DIGIC 6 Image Processor. 3.0" 1.04m-Dot Vari-Angle Touchscreen.</span>
+                  </span>
         				</p>
       				</div>
     	    </div>
@@ -154,6 +160,9 @@ EOF;
         					<a id="threecl" class="btn btn-default" role="button" onclick="amalikethree(); location.href=location.href;">Like</a>
                   <a id="threecd" class="btn btn-danger" role="button" onclick="amadislikethree(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarentthree()">Rent</a>
+                  <span id="popupj" class="popup" onclick="myFunctionj()">Info!
+                    <span class="popuptext" id="myPopupj">18 MP APS-C CMOS Sensor. DIGIC 5 Image Processor. 3.0" 1.04m-Dot Clear View II Touchscreen. Full HD 1080p Video Recording at 30 fps</span>
+                  </span>
         				</p>
       				</div>
     			</div>
@@ -197,6 +206,9 @@ EOF;
         					<a id="fourcl" class="btn btn-default" role="button" onclick="amalikefour(); location.href=location.href;">Like</a> 
                   <a id="fourcd" class="btn btn-danger" role="button" onclick="amadislikefour(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button"onclick="amarentfour()">Rent</a>
+                  <span id="popupk" class="popup" onclick="myFunctionk()">Info!
+                    <span class="popuptext" id="myPopupk">18 MP APS-C CMOS Sensor. DIGIC 4+ Image Processor. 3.0" 920k-Dot LCD Monitor. Full HD 1080p Video Recording at 30 fps</span>
+                  </span>
         				</p>
       				</div>
     			</div>
@@ -237,6 +249,9 @@ EOF;
         					<a id="fivecl" class="btn btn-default" role="button" onclick="amalikefive(); location.href=location.href;">Like</a> 
                   <a id="fivecd" class="btn btn-danger" role="button" onclick="amadislikefive(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarentfive()">Rent</a>
+                  <span id="popupl" class="popup" onclick="myFunctionl()">Info!
+                    <span class="popuptext" id="myPopupl">20.9MP DX-Format CMOS Sensor. EXPEED 5 Image Processor. 3.2" 2,539k-Dot Tilting Touchscreen LCD. 4K UHD Video Recording at 30 fps</span>
+                  </span>
         				</p>
       				</div>
     			</div>
@@ -277,6 +292,9 @@ EOF;
         					<a id="sixcl" class="btn btn-default" role="button" role="button" onclick="amalikesix(); location.href=location.href;">Like</a>
                   <a id="sixcd" class="btn btn-danger" role="button" onclick="amadislikesix(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarentsix()">Rent</a>
+                  <span id="popupz" class="popup" onclick="myFunctionz()">Info!
+                    <span class="popuptext" id="myPopupz">24.3MP FX-Format CMOS Sensor. EXPEED 3 Image Processor. 3.2" 921k-Dot LCD Monitor.</span>
+                  </span>
         				</p>
       				</div>
     			</div>
@@ -317,6 +335,9 @@ EOF;
         					<a id="sevencl" class="btn btn-default" role="button" onclick="amalikeseven(); location.href=location.href;">Like</a> 
                   <a id="sevencd" class="btn btn-danger" role="button" onclick="amadislikeseven(); location.href=location.href;">Dislike</a>
         					<a class="btn btn-warning" role="button" onclick="amarentseven()">Rent</a>
+                  <span id="popupx" class="popup" onclick="myFunctionx()">Info!
+                    <span class="popuptext" id="myPopupx">20.9MP DX-Format CMOS Sensor. EXPEED 5 Image Processor. 3.2" 922k-Dot Tilting Touchscreen LCD. 4K UHD Video Recording at 30 fps.</span>
+                  </span>
         				</p>
       				</div>
     			</div>

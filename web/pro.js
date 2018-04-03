@@ -173,7 +173,37 @@ function prorentseven() {
  }
 
 
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+function myFunctionq() {
+    var popupq = document.getElementById("myPopupq");
+    popupq.classList.toggle("showq");
+}
+
+function myFunctionw() {
+    var popupw = document.getElementById("myPopupw");
+    popupw.classList.toggle("showw");
+}
+
+function myFunctione() {
+    var popupe = document.getElementById("myPopupe");
+    popupe.classList.toggle("showe");
+}
+
+function myFunctionr() {
+    var popupr = document.getElementById("myPopupr");
+    popupr.classList.toggle("showr");
+}
+
+function myFunctiont() {
+    var popupt = document.getElementById("myPopupt");
+    popupt.classList.toggle("showt");
+}
+
+function myFunctiony() {
+    var popupy = document.getElementById("myPopupy");
+    popupy.classList.toggle("showy");
+}
+
+function myFunctionu() {
+    var popupu = document.getElementById("myPopupu");
+    popupu.classList.toggle("showu");
 }

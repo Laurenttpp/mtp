@@ -172,3 +172,40 @@ function amarentseven() {
            data:{action:'amarentseven'},
       });
  }
+
+
+
+function myFunctiong() {
+    var popupg = document.getElementById("myPopupg");
+    popupg.classList.toggle("showg");
+}
+
+function myFunctionh() {
+    var popuph = document.getElementById("myPopuph");
+    popuph.classList.toggle("showh");
+}
+
+function myFunctionj() {
+    var popupj = document.getElementById("myPopupj");
+    popupj.classList.toggle("showj");
+}
+
+function myFunctionk() {
+    var popupk = document.getElementById("myPopupk");
+    popupk.classList.toggle("showk");
+}
+
+function myFunctionl() {
+    var popupl = document.getElementById("myPopupl");
+    popupl.classList.toggle("showl");
+}
+
+function myFunctionz() {
+    var popupz = document.getElementById("myPopupz");
+    popupz.classList.toggle("showz");
+}
+
+function myFunctionx() {
+    var popupx = document.getElementById("myPopupx");
+    popupx.classList.toggle("showx");
+}
