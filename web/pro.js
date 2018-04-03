@@ -115,3 +115,59 @@ function prolikeone() {
            data:{action:'prodislikeseven'},
       });
  }
+
+
+
+
+
+
+
+  function prorentone() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentone'},
+      });
+ }
+   function prorenttwo() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorenttwo'},
+      });
+ }
+function prorentthree() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentthree'},
+      });
+ }
+function prorentfour() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentfour'},
+      });
+ }
+function prorentfive() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentfive'},
+      });
+ }
+function prorentsix() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentsix'},
+      });
+ }
+function prorentseven() {
+      $.ajax({
+           type: "POST",
+           url: 'savesettings.php',
+           data:{action:'prorentseven'},
+      });
+ }

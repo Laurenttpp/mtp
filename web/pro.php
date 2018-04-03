@@ -76,7 +76,7 @@ EOF;
                 <p>
                   <a id="onecl" class="btn btn-default" role="button" onclick="prolikeone(); location.href=location.href;">Like</a> 
                   <a id="onecd" class="btn btn-danger" role="button" onclick="prodislikeone(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentone()">Rent</a>
                 </p>
               </div>
           </div>
@@ -117,7 +117,7 @@ EOF;
                 <p>
                   <a id="twocl" class="btn btn-default" role="button" onclick="proliketwo(); location.href=location.href;">Like</a> 
                   <a id="twocd" class="btn btn-danger" role="button" onclick="prodisliketwo(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorenttwo()">Rent</a>
                 </p>
               </div>
           </div>
@@ -157,7 +157,7 @@ EOF;
                 <p>
                   <a id="pthreecl" class="btn btn-default" role="button" onclick="prolikethree(); location.href=location.href;">Like</a>
                   <a id="pthreecd" class="btn btn-danger" role="button" onclick="prodislikethree(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentthree()">Rent</a>
                 </p>
               </div>
           </div>
@@ -202,7 +202,7 @@ EOF;
                 <p>
                   <a id="pfourcl" class="btn btn-default" role="button" onclick="prolikefour(); location.href=location.href;">Like</a> 
                   <a id="pfourcd" class="btn btn-danger" role="button" onclick="prodislikefour(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentfour()">Rent</a>
                 </p>
               </div>
           </div>
@@ -244,7 +244,7 @@ EOF;
                 <p>
                   <a id="pfivecl" class="btn btn-default" role="button" onclick="prolikefive(); location.href=location.href;">Like</a> 
                   <a id="pfivecd" class="btn btn-danger" role="button" onclick="prodislikefive(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentfive()">Rent</a>
                 </p>
               </div>
           </div>
@@ -285,7 +285,7 @@ EOF;
                 <p>
                   <a id="psixcl" class="btn btn-default" role="button" onclick="prolikesix(); location.href=location.href;">Like</a>
                   <a id="psixcd" class="btn btn-danger" role="button" onclick="prodislikesix(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentsix()">Rent</a>
                 </p>
               </div>
           </div>
@@ -327,7 +327,7 @@ EOF;
                 <p>
                   <a id="psevencl" class="btn btn-default" role="button" onclick="prolikeseven(); location.href=location.href;">Like</a> 
                   <a id="psevencd" class="btn btn-danger" role="button" onclick="prodislikeseven(); location.href=location.href;">Dislike</a>
-                  <a class="btn btn-warning" role="button">Rent</a>
+                  <a class="btn btn-warning" role="button" onclick="prorentseven()">Rent</a>
                 </p>
               </div>
           </div>
