@@ -26,6 +26,15 @@ function connectDB($host, $port, $dbname, $credentials) {
 
 connectDB ($host, $port, $dbname, $credentials);
 
+                $sqlloged = <<<EOF
+    		SELECT * FROM DataBase.account WHERE logState = 'true';
+
+EOF;
+
+			$re = pg_query ( $db, $sqlloged );
+			$ro = pg_fetch_row($re);
+			$alog = $ro[3];
+
 
 //PROLIKEONE
 		function prolikeone($db, $likes) {
@@ -56,7 +65,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikeone') {
+				if($_POST['action'] == 'prolikeone' && $alog == true) {
 					$a = $a + 1;
 
 					prolikeone($db,$a);
@@ -92,7 +101,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikeone') {
+				if($_POST['action'] == 'prodislikeone' && $alog == true) {
 					$a1 = $a1 + 1;
 
 					prodislikeone($db,$a1);
@@ -128,7 +137,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'proliketwo') {
+				if($_POST['action'] == 'proliketwo' && $alog == true) {
 					$a2 = $a2 + 1;
 
 					proliketwo($db,$a2);
@@ -164,7 +173,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodisliketwo') {
+				if($_POST['action'] == 'prodisliketwo' && $alog == true) {
 					$a3 = $a3 + 1;
 
 					prodisliketwo($db,$a3);
@@ -200,7 +209,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikethree') {
+				if($_POST['action'] == 'prolikethree' && $alog == true) {
 					$a4 = $a4 + 1;
 
 					prolikethree($db,$a4);
@@ -236,7 +245,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikethree') {
+				if($_POST['action'] == 'prodislikethree' && $alog == true) {
 					$a5 = $a5 + 1;
 
 					prodislikethree($db,$a5);
@@ -273,7 +282,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikefour') {
+				if($_POST['action'] == 'prolikefour' && $alog == true) {
 					$a6 = $a6 + 1;
 
 					prolikefour($db,$a6);
@@ -309,7 +318,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikefour') {
+				if($_POST['action'] == 'prodislikefour' && $alog == true) {
 					$a7 = $a7 + 1;
 
 					prodislikefour($db,$a7);
@@ -345,7 +354,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikefive') {
+				if($_POST['action'] == 'prolikefive' && $alog == true) {
 					$a8 = $a8 + 1;
 
 					prolikefive($db,$a8);
@@ -381,7 +390,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikefive') {
+				if($_POST['action'] == 'prodislikefive' && $alog == true) {
 					$a9 = $a9 + 1;
 
 					prodislikefive($db,$a9);
@@ -417,7 +426,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikesix') {
+				if($_POST['action'] == 'prolikesix' && $alog == true) {
 					$aq = $aq + 1;
 
 					prolikesix($db,$aq);
@@ -453,7 +462,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikesix') {
+				if($_POST['action'] == 'prodislikesix' && $alog == true) {
 					$aw = $aw + 1;
 
 					prodislikesix($db,$aw);
@@ -491,7 +500,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prolikeseven') {
+				if($_POST['action'] == 'prolikeseven' && $alog == true) {
 					$ae = $ae + 1;
 
 					prolikeseven($db,$ae);
@@ -527,7 +536,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prodislikeseven') {
+				if($_POST['action'] == 'prodislikeseven' && $alog == true) {
 					$ar = $ar + 1;
 
 					prodislikeseven($db,$ar);
@@ -563,7 +572,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikeone') {
+				if($_POST['action'] == 'semilikeone' && $alog == true) {
 					$at = $at + 1;
 
 					semilikeone($db,$at);
@@ -599,7 +608,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikeone') {
+				if($_POST['action'] == 'semidislikeone' && $alog == true) {
 					$ay = $ay + 1;
 
 					semidislikeone($db,$ay);
@@ -637,7 +646,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semiliketwo') {
+				if($_POST['action'] == 'semiliketwo' && $alog == true) {
 					$au = $au + 1;
 
 					semiliketwo($db,$au);
@@ -673,7 +682,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidisliketwo') {
+				if($_POST['action'] == 'semidisliketwo' && $alog == true) {
 					$ai = $ai + 1;
 
 					semidisliketwo($db,$ai);
@@ -712,7 +721,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikethree') {
+				if($_POST['action'] == 'semilikethree' && $alog == true) {
 					$ao = $ao + 1;
 
 					semilikethree($db,$ao);
@@ -748,7 +757,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikethree') {
+				if($_POST['action'] == 'semidislikethree' && $alog == true) {
 					$ap = $ap + 1;
 
 					semidislikethree($db,$ap);
@@ -784,7 +793,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikefour') {
+				if($_POST['action'] == 'semilikefour' && $alog == true) {
 					$aa = $aa + 1;
 
 					semilikefour($db,$aa);
@@ -820,7 +829,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikefour') {
+				if($_POST['action'] == 'semidislikefour' && $alog == true) {
 					$as = $as + 1;
 
 					semidislikefour($db,$as);
@@ -856,7 +865,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikefive') {
+				if($_POST['action'] == 'semilikefive' && $alog == true) {
 					$ad = $ad + 1;
 
 					semilikefive($db,$ad);
@@ -892,7 +901,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikefive') {
+				if($_POST['action'] == 'semidislikefive' && $alog == true) {
 					$af = $af + 1;
 
 					semidislikefive($db,$af);
@@ -930,7 +939,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikesix') {
+				if($_POST['action'] == 'semilikesix' && $alog == true) {
 					$ag = $ag + 1;
 
 					semilikesix($db,$ag);
@@ -966,7 +975,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikesix') {
+				if($_POST['action'] == 'semidislikesix' && $alog == true) {
 					$ah = $ah + 1;
 
 					semidislikesix($db,$ah);
@@ -1003,7 +1012,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semilikeseven') {
+				if($_POST['action'] == 'semilikeseven' && $alog == true) {
 					$aj = $aj + 1;
 
 					semilikeseven($db,$aj);
@@ -1039,7 +1048,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semidislikeseven') {
+				if($_POST['action'] == 'semidislikeseven' && $alog == true) {
 					$ak = $ak + 1;
 
 					semidislikeseven($db,$ak);
@@ -1075,7 +1084,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikeone') {
+				if($_POST['action'] == 'amalikeone' && $alog == true) {
 					$al = $al + 1;
 
 					amalikeone($db,$al);
@@ -1111,7 +1120,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikeone') {
+				if($_POST['action'] == 'amadislikeone' && $alog == true) {
 					$az = $az + 1;
 
 					amadislikeone($db,$az);
@@ -1147,7 +1156,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amaliketwo') {
+				if($_POST['action'] == 'amaliketwo' && $alog == true) {
 					$ax = $ax + 1;
 
 					amaliketwo($db,$ax);
@@ -1183,7 +1192,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadisliketwo') {
+				if($_POST['action'] == 'amadisliketwo' && $alog == true) {
 					$ac = $ac + 1;
 
 					amadisliketwo($db,$ac);
@@ -1219,7 +1228,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikethree') {
+				if($_POST['action'] == 'amalikethree' && $alog == true) {
 					$av = $av + 1;
 
 					amalikethree($db,$av);
@@ -1255,7 +1264,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikethree') {
+				if($_POST['action'] == 'amadislikethree' && $alog == true) {
 					$ab = $ab + 1;
 
 					amadislikethree($db,$ab);
@@ -1292,7 +1301,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikefour') {
+				if($_POST['action'] == 'amalikefour' && $alog == true) {
 					$an = $an + 1;
 
 					amalikefour($db,$an);
@@ -1328,7 +1337,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikefour') {
+				if($_POST['action'] == 'amadislikefour' && $alog == true) {
 					$am = $am + 1;
 
 					amadislikefour($db,$am);
@@ -1364,7 +1373,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikefive') {
+				if($_POST['action'] == 'amalikefive' && $alog == true) {
 					$an1 = $an1 + 1;
 
 					amalikefive($db,$an1);
@@ -1400,7 +1409,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikefive') {
+				if($_POST['action'] == 'amadislikefive' && $alog == true) {
 					$am1 = $am1 + 1;
 
 					amadislikefive($db,$am1);
@@ -1436,7 +1445,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikesix') {
+				if($_POST['action'] == 'amalikesix' && $alog == true) {
 					$an2 = $an2 + 1;
 
 					amalikesix($db,$an2);
@@ -1472,7 +1481,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikesix') {
+				if($_POST['action'] == 'amadislikesix' && $alog == true) {
 					$am2 = $am2 + 1;
 
 					amadislikesix($db,$am2);
@@ -1509,7 +1518,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amalikeseven') {
+				if($_POST['action'] == 'amalikeseven' && $alog == true) {
 					$an3 = $an3 + 1;
 
 					amalikeseven($db,$an3);
@@ -1545,7 +1554,7 @@ EOF;
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amadislikeseven') {
+				if($_POST['action'] == 'amadislikeseven' && $alog == true) {
 					$am3 = $am3 + 1;
 
 					amadislikeseven($db,$am3);
@@ -2289,7 +2298,7 @@ EOF;
 }
 
 
-                $sqln0e = <<<EOF
+                $sqln0r = <<<EOF
     		SELECT * FROM DataBase.camera WHERE idcamera = 'nikond7500';
 
 EOF;
