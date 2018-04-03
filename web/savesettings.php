@@ -7,8 +7,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=lnize065";
-$credentials = "user=lnize065 password=Laurent1";
+$dbname = "------";
+$credentials = "user=------password=------";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -2289,7 +2289,7 @@ EOF;
 }
 
 
-                $sqln0e = <<<EOF
+                $sqln0r = <<<EOF
     		SELECT * FROM DataBase.camera WHERE idcamera = 'nikond7500';
 
 EOF;

@@ -21,7 +21,7 @@
 						<ul class= "myNavBar">
   							<li class="libar"><a class="abar" href="Home.html">Home</a></li>
   							<li class="libar"><a class="abar" href="#footer">About</a></li>
-  							<li class="libar" style="float:right"><a class="abar" href="Basket.html">Basket</a></li>
+  							<li class="libar" style="float:right"><a class="abar" href="Basket.php">Basket</a></li>
   							<li class="libar" style="float:right"><a class="abar" href="connection.php">Login</a></li>
 						</ul>
 					</nav>
