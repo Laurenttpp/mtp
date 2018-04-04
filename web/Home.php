@@ -15,10 +15,10 @@
           <header>
           <nav>
             <ul class= "myNavBar">
-                <li class="libar"><a class="active" href="Home.html">Home</a></li>
+                <li class="libar"><a class="active" href="Home.php">Home</a></li>
                 <li class="libar"><a class="abar" href="#footer">Contact</a></li>
                 <li class="libar" style="float:right"><a class="abar" href="basket.php">Basket</a></li>
-                <li class="libar" style="float:right"><a id="logState" class="abar" >Logout</a></li>
+                <li class="libar" style="float:right"><a id="logState" class="abar" >connection</a></li>
             </ul>
           </nav>
         </header>
@@ -79,24 +79,76 @@
 </body>
 </html>
 
-  <script>
+ <script>
 
   
 
 $(document).ready(function(){
   $("#logState").click(function(){
+    //logmail= $_POST['mail'];
       
     $.ajax({
      type: "post",
      url: "logstate.php",
      success: function(html){    
+      // if(html=='Success'){ 
            window.location="connection.php";
-
+           //} 
+       //alert(html);
        },
            
     });
   return false;
   });
   });
+ 
+document.getElementById("logState").innerHTML = "<?php 
+
+
+
+
+session_start ();
+
+
+$host = $_SESSION ["host"];
+$port = $_SESSION ["port"];
+$dbname = $_SESSION ["db"];
+$credentials = $_SESSION ["credentials"];
+
+
+$db = pg_connect ( "$host $port $dbname $credentials" );
+
+
+
+function connectDB($host, $port, $dbname, $credentials) {
+  
+  $db = pg_connect ( "$host $port $dbname $credentials" );
+
+}
+
+connectDB ($host, $port, $dbname, $credentials);
+
+
+
+
+$logmail= $_SESSION['mail'];
+
+  $sql = <<<EOF
+        Select logstate FROM DataBase.account
+        WHERE mailaccount='$logmail';
+EOF;
+
+  $ret = pg_query ( $db, $sql );
+
+  $row = pg_fetch_row($ret);
+    if ($row[0]==true) {echo "logout";}
+    else {echo "login";}
+    
+  
+
+
+
+
+; ?>";
 
 </script>

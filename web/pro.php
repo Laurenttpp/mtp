@@ -19,10 +19,10 @@
           <header>
           <nav>
             <ul class= "myNavBar">
-                <li class="libar"><a class="abar" href="Home.html">Home</a></li>
+                <li class="libar"><a class="abar" href="Home.php">Home</a></li>
                 <li class="libar"><a class="abar" href="#footer">About</a></li>
                 <li class="libar" style="float:right"><a class="abar" href="Basket.php">Basket</a></li>
-                <li class="libar" style="float:right"><a class="abar" href="connection.php">Login</a></li>
+                <li class="libar" style="float:right"><a id="logState" class="abar" >connection</a></li>
             </ul>
           </nav>
         </header>
@@ -379,3 +379,58 @@ EOF;
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<script>
+
+
+
+$(document).ready(function(){
+  $("#logState").click(function(){
+    //logmail= $_POST['mail'];
+      
+    $.ajax({
+     type: "post",
+     url: "logstate.php",
+     success: function(html){    
+      // if(html=='Success'){ 
+           window.location="connection.php";
+           //} 
+       //alert(html);
+       },
+           
+    });
+  return false;
+  });
+  });
+
+
+
+document.getElementById("logState").innerHTML = "<?php
+
+
+
+
+
+
+ $logmail= $_SESSION['mail'];
+
+  $sql = <<<EOF
+        Select logstate FROM DataBase.account
+        WHERE mailaccount='$logmail';
+EOF;
+
+  $ret = pg_query ( $db, $sql );
+
+  $row = pg_fetch_row($ret);
+    if ($row[0]==true) {echo "logout";}
+    else {echo "login";}
+  
+
+
+
+
+
+ ?>";
+
+</script>

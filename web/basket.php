@@ -153,7 +153,7 @@ pg_close($db);
     		     type: "post",
     		     url: "purchaseItems.php",
     		     success: function(html){    
-    		         window.location="Home.html";
+    		         window.location="Home.php";
     	   			 alert(" Thank you for your purchase!  We sent you an e-mail of confirmation and more details."); 
     		    	 },
     		    	     

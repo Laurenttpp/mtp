@@ -28,8 +28,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=----";
-$credentials = "user=---- password=----";
+$dbname = "------";
+$credentials = "user=------ password=------";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -161,7 +161,7 @@ $(document).ready(function(){
      data: "name="+username+"&pwd="+password, 
      success: function(html){    
   if(html=='Success')    {
-  window.location="Home.html";
+  window.location="Home.php";
   }
   else if (html=='Failed')   {
     document.getElementById("resultat").innerHTML = "connection error !";

@@ -36,7 +36,7 @@ EOF;
 
 
 
-$logmail= $_SESSION['mail'];
+$_SESSION['mail']=null;
 
 
 
