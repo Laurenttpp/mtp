@@ -7,8 +7,8 @@ session_start();
 
 $host = "host=www.eecs.uottawa.ca";
 $port = "port=15432";
-$dbname = "dbname=----";
-$credentials = "user=---- password=----";
+$dbname = "dbname=lnize065";
+$credentials = "user=lnize065 password=Laurent1";
 
 $_SESSION["host"] = $host;
 $_SESSION["port"] = $port;
@@ -1939,9 +1939,9 @@ EOF;
 		}
 
 //PRORENTONE
-		function prorentone($db, $rent) {
+		function prorentone($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon1dc';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon1dc';
 		
 		
 EOF;
@@ -1963,21 +1963,22 @@ EOF;
 			$retn4 = pg_query ( $db, $sqln4 );
 			$rown4 = pg_fetch_row($retn4);
 			$an4 = $rown4[3];
+			$r0 = $rown4[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentone' && $an4 == 0) {
+				if($_POST['action'] == 'prorentone' && $an4 == 0 && $r0 > 0) {
 					$an4 = 1;
-
-					prorentone($db,$an4);
+					$r0 = $r0 - 1;
+					prorentone($db,$an4,$r0);
 				}
 		}
 
 //PRORENTTWO
-		function prorenttwo($db, $rent) {
+		function prorenttwo($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'sonya99ii';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'sonya99ii';
 		
 		
 EOF;
@@ -1999,21 +2000,22 @@ EOF;
 			$retn5 = pg_query ( $db, $sqln5 );
 			$rown5 = pg_fetch_row($retn5);
 			$an5 = $rown5[3];
+			$r1 = $rown5[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorenttwo' && $an5 == 0) {
+				if($_POST['action'] == 'prorenttwo' && $an5 == 0 && $r1 > 0) {
 					$an5 = 1;
-
-					prorenttwo($db,$an5);
+					$r1 = $r1 - 1;
+					prorenttwo($db,$an5,$r1);
 				}
 		}
 
 //PRORENTTHREE
-		function prorentthree($db, $rent) {
+		function prorentthree($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond4';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond4';
 		
 		
 EOF;
@@ -2035,21 +2037,21 @@ EOF;
 			$retn6 = pg_query ( $db, $sqln6 );
 			$rown6 = pg_fetch_row($retn6);
 			$an6 = $rown6[3];
-
+			$r2 = $rown6[5];
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentthree' && $an6 == 0) {
+				if($_POST['action'] == 'prorentthree' && $an6 == 0 && $r2 > 0) {
 					$an6 = 1;
-
-					prorentthree($db,$an6);
+					$r2 = $r2 - 1;
+					prorentthree($db,$an6,$r2);
 				}
 		}
 
 //PRORENTFOUR
-		function prorentfour($db, $rent) {
+		function prorentfour($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond5';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond5';
 		
 		
 EOF;
@@ -2071,21 +2073,23 @@ EOF;
 			$retn7 = pg_query ( $db, $sqln7 );
 			$rown7 = pg_fetch_row($retn7);
 			$an7 = $rown7[3];
+			$r3 = $rown7[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentfour' && $an7 == 0) {
+				if($_POST['action'] == 'prorentfour' && $an7 == 0 && $r3 > 0) {
 					$an7 = 1;
+					$r3 = $r3 - 1;
 
-					prorentfour($db,$an7);
+					prorentfour($db,$an7,$r3);
 				}
 		}
 
 //PRORENTFIVE
-		function prorentfive($db, $rent) {
+		function prorentfive($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon1dx';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon1dx';
 		
 		
 EOF;
@@ -2107,21 +2111,23 @@ EOF;
 			$retn8 = pg_query ( $db, $sqln8 );
 			$rown8 = pg_fetch_row($retn8);
 			$an8 = $rown8[3];
+			$r4 = $rown8[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentfive' && $an8 == 0) {
+				if($_POST['action'] == 'prorentfive' && $an8 == 0 && $r4 > 0) {
 					$an8 = 1;
+					$r4 = $r4 - 1;
 
-					prorentfive($db,$an8);
+					prorentfive($db,$an8,$r4);
 				}
 		}
 
 //PRORENTSIX
-		function prorentsix($db, $rent) {
+		function prorentsix($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'lumixgh5';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'lumixgh5';
 		
 		
 EOF;
@@ -2143,21 +2149,23 @@ EOF;
 			$retn9 = pg_query ( $db, $sqln9 );
 			$rown9 = pg_fetch_row($retn9);
 			$an9 = $rown9[3];
+			$r5 = $rown9[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentsix' && $an9 == 0) {
+				if($_POST['action'] == 'prorentsix' && $an9 == 0 && $r5 > 0) {
 					$an9 = 1;
+					$r5 = $r5 - 1;
 
-					prorentsix($db,$an9);
+					prorentsix($db,$an9,$r5);
 				}
 		}
 
 //PRORENTSEVEN
-		function prorentseven($db, $rent) {
+		function prorentseven($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'olympusem1';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'olympusem1';
 		
 		
 EOF;
@@ -2179,21 +2187,23 @@ EOF;
 			$retn0 = pg_query ( $db, $sqln0 );
 			$rown0 = pg_fetch_row($retn0);
 			$an0 = $rown0[3];
+			$r6 = $rown0[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'prorentseven' && $an0 == 0) {
+				if($_POST['action'] == 'prorentseven' && $an0 == 0 && $r6 > 0) {
 					$an0 = 1;
+					$r6 = $r6 - 1;
 
-					prorentseven($db,$an0);
+					prorentseven($db,$an0,$r6);
 				}
 		}
 
 //SEMIRENTONE
-		function semirentone($db, $rent) {
+		function semirentone($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon5dmarkiii';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon5dmarkiii';
 		
 		
 EOF;
@@ -2215,21 +2225,23 @@ EOF;
 			$retn01 = pg_query ( $db, $sqln01 );
 			$rown01 = pg_fetch_row($retn01);
 			$an01 = $rown01[3];
+			$r7 = $rown01[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentone' && $an01 == 0) {
+				if($_POST['action'] == 'semirentone' && $an01 == 0 && $r7 > 0) {
 					$an01 = 1;
+					$r7 = $r7 - 1;
 
-					semirentone($db,$an01);
+					semirentone($db,$an01,$r7);
 				}
 		}
 
 //SEMIRENTTWO
-		function semirenttwo($db, $rent) {
+		function semirenttwo($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'lumixgx8';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'lumixgx8';
 		
 		
 EOF;
@@ -2251,21 +2263,23 @@ EOF;
 			$retn02 = pg_query ( $db, $sqln02 );
 			$rown02 = pg_fetch_row($retn02);
 			$an02 = $rown02[3];
+			$r8 = $rown02[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirenttwo' && $an02 == 0) {
+				if($_POST['action'] == 'semirenttwo' && $an02 == 0 && $r8 > 0) {
 					$an02 = 1;
+					$r8 = $r8 - 1;
 
-					semirenttwo($db,$an02);
+					semirenttwo($db,$an02,$r8);
 				}
 		}
 
 //SEMIRENTTHREE
-		function semirentthree($db, $rent) {
+		function semirentthree($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canond750';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canond750';
 		
 		
 EOF;
@@ -2287,21 +2301,23 @@ EOF;
 			$retn03 = pg_query ( $db, $sqln03 );
 			$rown03 = pg_fetch_row($retn03);
 			$an03 = $rown03[3];
+			$r9 = $rown03[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentthree' && $an03 == 0) {
+				if($_POST['action'] == 'semirentthree' && $an03 == 0 && $r9 > 0) {
 					$an03 = 1;
+					$r9 = $r9 - 1;
 
-					semirentthree($db,$an03);
+					semirentthree($db,$an03,$r9);
 				}
 		}
 
 //SEMIRENTFOUR
-		function semirentfour($db, $rent) {
+		function semirentfour($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond850';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond850';
 		
 		
 EOF;
@@ -2323,21 +2339,23 @@ EOF;
 			$retn04 = pg_query ( $db, $sqln04 );
 			$rown04 = pg_fetch_row($retn04);
 			$an04 = $rown04[3];
+			$r10 = $rown04[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentfour' && $an04 == 0) {
+				if($_POST['action'] == 'semirentfour' && $an04 == 0 && $r10 > 0) {
 					$an04 = 1;
+					$r10 = $r10 - 1;
 
-					semirentfour($db,$an04);
+					semirentfour($db,$an04,$r10);
 				}
 		}
 
 //SEMIRENTFIVE
-		function semirentfive($db, $rent) {
+		function semirentfive($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikondf';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikondf';
 		
 		
 EOF;
@@ -2359,21 +2377,23 @@ EOF;
 			$retn05 = pg_query ( $db, $sqln05 );
 			$rown05 = pg_fetch_row($retn05);
 			$an05 = $rown05[3];
+			$r11 = $rown05[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentfive' && $an05 == 0) {
+				if($_POST['action'] == 'semirentfive' && $an05 == 0 && $r11 > 0) {
 					$an05 = 1;
+					$r11 = $r11 - 1;
 
-					semirentfive($db,$an05);
+					semirentfive($db,$an05,$r11);
 				}
 		}
 
 //SEMIRENTSIX
-		function semirentsix($db, $rent) {
+		function semirentsix($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'sonyalpha68';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'sonyalpha68';
 		
 		
 EOF;
@@ -2395,21 +2415,23 @@ EOF;
 			$retn06 = pg_query ( $db, $sqln06 );
 			$rown06 = pg_fetch_row($retn06);
 			$an06 = $rown06[3];
+			$r12 = $rown06[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentsix' && $an06 == 0) {
+				if($_POST['action'] == 'semirentsix' && $an06 == 0 && $r12 > 0) {
 					$an06 = 1;
+					$r12 = $r12 - 1;
 
-					semirentsix($db,$an06);
+					semirentsix($db,$an06,$r12);
 				}
 		}
 
 //SEMIRENTSEVEN
-		function semirentseven($db, $rent) {
+		function semirentseven($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'sonyalpha77';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'sonyalpha77';
 		
 		
 EOF;
@@ -2431,21 +2453,23 @@ EOF;
 			$retn07 = pg_query ( $db, $sqln07 );
 			$rown07 = pg_fetch_row($retn07);
 			$an07 = $rown07[3];
+			$r13 = $rown07[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'semirentseven' && $an07 == 0) {
+				if($_POST['action'] == 'semirentseven' && $an07 == 0 && $r13 > 0) {
 					$an07 = 1;
+					$r13 = $r13 - 1;
 
-					semirentseven($db,$an07);
+					semirentseven($db,$an07,$r13);
 				}
 		}
 
 //AMARENTONE
-		function amarentone($db, $rent) {
+		function amarentone($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canond7d';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canond7d';
 		
 		
 EOF;
@@ -2467,21 +2491,23 @@ EOF;
 			$retn08 = pg_query ( $db, $sqln08 );
 			$rown08 = pg_fetch_row($retn08);
 			$an08 = $rown08[3];
+			$r14 = $rown08[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentone' && $an08 == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentone' && $an08 == 0 && $alog == true && $r14 > 0) {
 					$an08 = 1;
+					$r14 = $r14 - 1;
 
-					amarentone($db,$an08);
+					amarentone($db,$an08,$r14);
 				}
 		}
 
 //AMARENTTWO
-		function amarenttwo($db, $rent) {
+		function amarenttwo($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon60d';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon60d';
 		
 		
 EOF;
@@ -2503,21 +2529,23 @@ EOF;
 			$retn09 = pg_query ( $db, $sqln09 );
 			$rown09 = pg_fetch_row($retn09);
 			$an09 = $rown09[3];
+			$r15 = $rown09[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarenttwo' && $an09 == 0 && $alog == true) {
+				if($_POST['action'] == 'amarenttwo' && $an09 == 0 && $alog == true && $r15 > 0) {
 					$an09 = 1;
+					$r15 = $r15 - 1;
 
-					amarenttwo($db,$an09);
+					amarenttwo($db,$an09,$r15);
 				}
 		}
 
 //AMARENTTHREE
-		function amarentthree($db, $rent) {
+		function amarentthree($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon100d';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon100d';
 		
 		
 EOF;
@@ -2539,21 +2567,23 @@ EOF;
 			$retn00 = pg_query ( $db, $sqln00 );
 			$rown00 = pg_fetch_row($retn00);
 			$an00 = $rown00[3];
+			$r16 = $rown00[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentthree' && $an00 == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentthree' && $an00 == 0 && $alog == true && $r16 > 0) {
 					$an00 = 1;
+					$r16 = $r16 - 1;
 
-					amarentthree($db,$an00);
+					amarentthree($db,$an00,$r16);
 				}
 		}
 
 //AMARENTFOUR
-		function amarentfour($db, $rent) {
+		function amarentfour($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'canon1300d';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'canon1300d';
 		
 		
 EOF;
@@ -2575,21 +2605,23 @@ EOF;
 			$retn0q = pg_query ( $db, $sqln0q );
 			$rown0q = pg_fetch_row($retn0q);
 			$an0q = $rown0q[3];
+			$r17 = $rown0q[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentfour' && $an0q == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentfour' && $an0q == 0 && $alog == true && $r17 > 0) {
 					$an0q = 1;
+					$r17 = $r17 - 1;
 
-					amarentfour($db,$an0q);
+					amarentfour($db,$an0q, $r17);
 				}
 		}
 
 //AMARENTFIVE
-		function amarentfive($db, $rent) {
+		function amarentfive($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond500';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond500';
 		
 		
 EOF;
@@ -2611,21 +2643,23 @@ EOF;
 			$retn0w = pg_query ( $db, $sqln0w );
 			$rown0w = pg_fetch_row($retn0w);
 			$an0w = $rown0w[3];
+			$r18 = $rown0w[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentfive' && $an0w == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentfive' && $an0w == 0 && $alog == true && $r18 > 0) {
 					$an0w = 1;
+					$r18 = $r18 - 1;
 
-					amarentfive($db,$an0w);
+					amarentfive($db,$an0w, $r18);
 				}
 		}
 
 //AMARENTSIX
-		function amarentsix($db, $rent) {
+		function amarentsix($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond600';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond600';
 		
 		
 EOF;
@@ -2647,21 +2681,23 @@ EOF;
 			$retn0e = pg_query ( $db, $sqln0e );
 			$rown0e = pg_fetch_row($retn0e);
 			$an0e = $rown0e[3];
+			$r19 = $rown0e[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentsix' && $an0e == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentsix' && $an0e == 0 && $alog == true && $r19 > 0) {
 					$an0e = 1;
+					$r19 = $r19 - 1;
 
-					amarentsix($db,$an0e);
+					amarentsix($db,$an0e, $r19);
 				}
 		}
 
 //AMARENTSEVEN
-		function amarentseven($db, $rent) {
+		function amarentseven($db, $rent, $s) {
 				$sql = <<<EOF
-		UPDATE DataBase.camera SET rented = '$rent' WHERE idcamera = 'nikond7500';
+		UPDATE DataBase.camera SET rented = '$rent', stock = '$s' WHERE idcamera = 'nikond7500';
 		
 		
 EOF;
@@ -2683,14 +2719,16 @@ EOF;
 			$retn0r = pg_query ( $db, $sqln0r );
 			$rown0r = pg_fetch_row($retn0r);
 			$an0r = $rown0r[3];
+			$r20 = $rown0r[5];
 
 
 			if(isset($_POST['action'])) {
 
-				if($_POST['action'] == 'amarentseven' && $an0r == 0 && $alog == true) {
+				if($_POST['action'] == 'amarentseven' && $an0r == 0 && $alog == true && $r20 > 0) {
 					$an0r = 1;
+					$r20 = $r20 - 1;
 
-					amarentseven($db,$an0r);
+					amarentseven($db,$an0r, $r20);
 				}
 		}
 
